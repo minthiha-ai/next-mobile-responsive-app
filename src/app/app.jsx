@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState, Suspense } from 'react';
+import { redirect } from 'next/navigation';
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import RTL from "@/app/(DashboardLayout)/layout/shared/customizer/RTL";
@@ -8,6 +9,7 @@ import { useSelector } from 'react-redux';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import "@/utils/i18n";
 import "@/app/api/index";
+
 
 const MyApp = ({ children }) => {
     const theme = ThemeSettings();
@@ -19,6 +21,13 @@ const MyApp = ({ children }) => {
                 <ThemeProvider theme={theme}>
                     <RTL direction={customizer.activeDir}>
                         <CssBaseline />
+                        {/* {isMobile ? (
+                            <MobileLayout>
+                                {children}
+                            </MobileLayout>
+                        ) : (
+                            children
+                        )} */}
                         {children}
                     </RTL>
                 </ThemeProvider>

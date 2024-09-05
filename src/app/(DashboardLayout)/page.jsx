@@ -16,68 +16,96 @@ import Social from '@/app/components/dashboards/modern/Social';
 import SellingProducts from '@/app/components/dashboards/modern/SellingProducts';
 import WeeklyStats from '@/app/components/dashboards/modern/WeeklyStats';
 import TopPerformers from '@/app/components/dashboards/modern/TopPerformers';
+import MobileHomePage from '../(MobileLayout)/MobileHomePage';
 
 export default function Dashboard() {
-  const [isLoading, setLoading] = useState(true);
-  useEffect(() => {
-    setLoading(false);
-  }, []);
+    const [isLoading, setLoading] = useState(true);
+    const [isMobile, setIsMobile] = useState(false);
 
-  return (
-    <PageContainer title="Dashboard" description="this is Dashboard">
-      <Box mt={3}>
-        <Grid container spacing={3}>
-          {/* column */}
-          <Grid item xs={12} lg={12}>
-            <TopCards />
-          </Grid>
-          {/* column */}
-          <Grid item xs={12} lg={8}>
-            <RevenueUpdates isLoading={isLoading} />
-          </Grid>
-          {/* column */}
-          <Grid item xs={12} lg={4}>
-            <Grid container spacing={3}>
-              <Grid item xs={12} sm={6} lg={12}>
-                <YearlyBreakup isLoading={isLoading} />
-              </Grid>
-              <Grid item xs={12} sm={6} lg={12}>
-                <MonthlyEarnings isLoading={isLoading} />
-              </Grid>
-            </Grid>
-          </Grid>
-          {/* column */}
-          <Grid item xs={12} lg={4}>
-            <EmployeeSalary isLoading={isLoading} />
-          </Grid>
-          {/* column */}
-          <Grid item xs={12} lg={4}>
-            <Grid container spacing={3}>
-              <Grid item xs={12} sm={6}>
-                <Customers isLoading={isLoading} />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <Projects isLoading={isLoading} />
-              </Grid>
-              <Grid item xs={12}>
-                <Social />
-              </Grid>
-            </Grid>
-          </Grid>
-          {/* column */}
-          <Grid item xs={12} lg={4}>
-            <SellingProducts />
-          </Grid>
-          {/* column */}
-          <Grid item xs={12} lg={4}>
-            <WeeklyStats isLoading={isLoading} />
-          </Grid>
-          {/* column */}
-          <Grid item xs={12} lg={8}>
-            <TopPerformers />
-          </Grid>
-        </Grid>
-      </Box>
-    </PageContainer>
-  );
+    useEffect(() => {
+        setLoading(false);
+        const checkIsMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        checkIsMobile(); // Initial check
+
+        window.addEventListener('resize', checkIsMobile);
+        return () => {
+            window.removeEventListener('resize', checkIsMobile);
+            // redirect('/mobile');
+        };
+    }, []);
+
+    // Render nothing until the isMobile value is determined (Optional)
+    if (typeof window === 'undefined') {
+        return null;
+    }
+
+    return (
+        <>
+            {isMobile ? (
+                <div className="">
+                    <MobileHomePage />
+                </div>
+            ) : (
+                <PageContainer title="Dashboard" description="this is Dashboard">
+                    <Box mt={3}>
+                        <Grid container spacing={3}>
+                            {/* column */}
+                            <Grid item xs={12} lg={12}>
+                                <TopCards />
+                            </Grid>
+                            {/* column */}
+                            <Grid item xs={12} lg={8}>
+                                <RevenueUpdates isLoading={isLoading} />
+                            </Grid>
+                            {/* column */}
+                            <Grid item xs={12} lg={4}>
+                                <Grid container spacing={3}>
+                                    <Grid item xs={12} sm={6} lg={12}>
+                                        <YearlyBreakup isLoading={isLoading} />
+                                    </Grid>
+                                    <Grid item xs={12} sm={6} lg={12}>
+                                        <MonthlyEarnings isLoading={isLoading} />
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                            {/* column */}
+                            <Grid item xs={12} lg={4}>
+                                <EmployeeSalary isLoading={isLoading} />
+                            </Grid>
+                            {/* column */}
+                            <Grid item xs={12} lg={4}>
+                                <Grid container spacing={3}>
+                                    <Grid item xs={12} sm={6}>
+                                        <Customers isLoading={isLoading} />
+                                    </Grid>
+                                    <Grid item xs={12} sm={6}>
+                                        <Projects isLoading={isLoading} />
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Social />
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                            {/* column */}
+                            <Grid item xs={12} lg={4}>
+                                <SellingProducts />
+                            </Grid>
+                            {/* column */}
+                            <Grid item xs={12} lg={4}>
+                                <WeeklyStats isLoading={isLoading} />
+                            </Grid>
+                            {/* column */}
+                            <Grid item xs={12} lg={8}>
+                                <TopPerformers />
+                            </Grid>
+                        </Grid>
+                    </Box>
+                </PageContainer>
+            )}
+        </>
+
+    );
 }

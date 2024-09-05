@@ -1,0 +1,266 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: #e4f0fe;
+    overflow-y: auto;
+    /* Enable scrolling for the content */
+}
+
+.home-wraper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2;
+    padding-top: 60px;
+    /* Space for fixed header */
+    padding-bottom: 60px;
+    /* Space for fixed bottom nav */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    /* Same as background */
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+    /* Ensure it stays on top */
+    border-bottom: 1px solid #ddd;
+}
+
+.menuButton {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    position: relative;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.language img {
+    width: 30px;
+}
+
+.banner-slider {
+    margin-top: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.banner-slider img {
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 0.5rem;
+}
+
+.bottomNav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure it stays on top */
+}
+
+.bottomNav button {
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.announce {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4;
+    padding-left: 0.5rem;
+}
+
+/* Middle Menu Navigation container */
+.menu-bar-container {
+    background-color: #fff;
+    padding-top: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.vip-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.vip-level {
+    display: flex;
+    justify-content: start;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.badge {
+    background-color: #446adb;
+    color: #fff;
+    padding: 0.12rem 0.5rem;
+    border-radius: 5px;
+    border: none;
+    text-wrap: nowrap;
+}
+
+.balance-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.balance {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.balance span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.info-icon {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.deposit-button {
+    background-color: white;
+    border: 1px solid #1c5cff;
+    color: #1c5cff;
+    padding: 0.25rem 1rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 100%;
+}
+
+.menu-icons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    gap: 2;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.menu-item span {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Bottom Navigation container */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Make sure it's always on top */
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+/* Individual buttons in the navigation */
+.nav-item {
+    background: none;
+    border: none;
+    outline: none;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Adjust padding as needed */
+}
+
+/* Icons for each button */
+.nav-item img {
+    width: 32px;
+    /* Adjust width as needed */
+    margin-bottom: 2px;
+}
+
+/* Active or hovered state */
+.nav-item:hover,
+.nav-item:focus {
+    color: #007bff;
+    /* Highlight color for active */
+}
+
+/* Style for the active button */
+.nav-item.active {
+    color: #007bff;
+}
+
+.invite-img {
+    border-radius: 100%;
+    border: 3px solid #fff;
+    /* Make the button circular */
+    background-color: #6fa0f7;
+    overflow: hidden;
+    padding: 0.7rem;
+    /* Adjust padding as needed */
+    position: relative;
+    top: -22;
+    /* Ensure the icon fits within the circle */
+}
+
+.invite-img img {
+    width: 36px;
+    /* Adjust width as needed */
+    height: auto;
+}
+
+.invite-button span {
+    position: relative;
+    top: -16px;
+}

@@ -11,10 +11,10 @@
 .home-wraper {
     display: flex;
     flex-direction: column;
-    row-gap: 2;
-    padding-top: 60px;
+    row-gap: 0.125rem;
+    padding-top: 3.75rem;
     /* Space for fixed header */
-    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
     /* Space for fixed bottom nav */
 }
 
@@ -23,15 +23,15 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0rem;
+    left: 0rem;
     width: 100%;
-    background-color: #fff;
+    background-color: #e4f0fe;
     /* Same as background */
     padding: 0.5rem 1rem;
     z-index: 1000;
     /* Ensure it stays on top */
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0.063rem solid #ddd;
 }
 
 .menuButton {
@@ -47,7 +47,7 @@
 }
 
 .language img {
-    width: 30px;
+    width: 1.875rem;
 }
 
 .banner-slider {
@@ -57,8 +57,8 @@
 }
 
 .banner-slider img {
-    border-radius: 10px;
-    max-height: 200px;
+    border-radius: 0.625rem;
+    max-height: 12.5rem;
     object-fit: cover;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .content {
-    flex-grow: 1;
+    flex-grow: 0.063rem;
     padding: 0.5rem;
 }
 
@@ -79,10 +79,10 @@
     justify-content: space-around;
     padding: 0.5rem;
     background-color: #fff;
-    border-top: 1px solid #ddd;
+    border-top: 0.063rem solid #ddd;
     position: fixed;
-    bottom: 0;
-    left: 0;
+    bottom: 0rem;
+    left: 0rem;
     width: 100%;
     z-index: 1000;
     /* Ensure it stays on top */
@@ -99,7 +99,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 4;
+    gap: 0.25rem;
     padding-left: 0.5rem;
 }
 
@@ -129,7 +129,7 @@
     background-color: #446adb;
     color: #fff;
     padding: 0.12rem 0.5rem;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     border: none;
     text-wrap: nowrap;
 }
@@ -149,7 +149,7 @@
 }
 
 .balance span {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
 }
 
@@ -160,7 +160,7 @@
 
 .deposit-button {
     background-color: white;
-    border: 1px solid #1c5cff;
+    border: 0.063rem solid #1c5cff;
     color: #1c5cff;
     padding: 0.25rem 1rem;
     border-radius: 10px;
@@ -174,7 +174,7 @@
     display: flex;
     justify-content: space-around;
     padding-top: 1rem;
-    gap: 2;
+    gap: 0.188rem;
 }
 
 .menu-item {
@@ -184,12 +184,12 @@
 }
 
 .menu-item img {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .menu-item span {
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: bold;
 }
 
@@ -204,7 +204,8 @@
     width: 100%;
     z-index: 1000;
     /* Make sure it's always on top */
-    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0rem -0.063rem 0.625rem rgba(0, 0, 0, 0.1);
+    height: 4.375rem;
     /* Subtle shadow */
 }
 
@@ -214,7 +215,7 @@
     border: none;
     outline: none;
     color: gray;
-    font-size: 12px;
+    font-size: 0.813rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,9 +225,7 @@
 
 /* Icons for each button */
 .nav-item img {
-    width: 32px;
-    /* Adjust width as needed */
-    margin-bottom: 2px;
+    width: 2rem;
 }
 
 /* Active or hovered state */
@@ -243,24 +242,24 @@
 
 .invite-img {
     border-radius: 100%;
-    border: 3px solid #fff;
+    border: 0.188rem solid #fff;
     /* Make the button circular */
     background-color: #6fa0f7;
     overflow: hidden;
-    padding: 0.7rem;
+    padding: 0.8rem;
     /* Adjust padding as needed */
     position: relative;
-    top: -22;
+    top: -1rem;
     /* Ensure the icon fits within the circle */
 }
 
 .invite-img img {
-    width: 36px;
+    width: 2rem;
     /* Adjust width as needed */
     height: auto;
 }
 
 .invite-button span {
     position: relative;
-    top: -16px;
+    top: -1.2rem;
 }

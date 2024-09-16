@@ -1,5 +1,4 @@
 import React from 'react'
-import '@/app/mobile.css';
 import Language from './language';
 import { IconMenu2 } from '@tabler/icons-react';
 

@@ -1,9 +1,11 @@
+import InstantTopUp from '@/app/(MobileLayout)/mobile-deposit/mobile-instant-top-up'
 import React from 'react'
-import MobileDeposit from '@/app/(MobileLayout)/mobile-deposit/mobile-deposit'
+
+
 const Deposit = () => {
     return (
         <>
-            <MobileDeposit />
+            <InstantTopUp />
         </>
     )
 }

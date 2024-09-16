@@ -21,13 +21,6 @@ const MyApp = ({ children }) => {
                 <ThemeProvider theme={theme}>
                     <RTL direction={customizer.activeDir}>
                         <CssBaseline />
-                        {/* {isMobile ? (
-                            <MobileLayout>
-                                {children}
-                            </MobileLayout>
-                        ) : (
-                            children
-                        )} */}
                         {children}
                     </RTL>
                 </ThemeProvider>

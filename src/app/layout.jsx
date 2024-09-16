@@ -1,6 +1,9 @@
 import { Providers } from "@/store/providers";
 import MyApp from './app';
 import "./global.css";
+import "./mobile.css";
+import "./mobile-home.css";
+import "./mobile-deposit.css";
 
 export const metadata = {
     title: 'Modernize Main Demo',

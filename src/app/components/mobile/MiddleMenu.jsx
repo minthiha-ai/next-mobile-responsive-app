@@ -1,5 +1,7 @@
 import { IconInfoCircle } from '@tabler/icons-react';
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
+import paths from '@/paths';
 
 const MiddleMenu = () => {
 
@@ -23,7 +25,9 @@ const MiddleMenu = () => {
                         <span>RM 199,900</span>
                         <i className="info-icon"><IconInfoCircle size={18} /></i>
                     </div>
-                    <button className="deposit-button">Deposit</button>
+                    <Link href={paths.deposit()}>
+                        <button className="deposit-button">Deposit</button>
+                    </Link>
                 </div>
             </div>
             <div className="menu-icons">

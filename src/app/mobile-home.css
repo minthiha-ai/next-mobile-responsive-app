@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10;
+    gap: 0.625rem;
     width: 100%;
     padding: 0.5rem 0.5rem 2rem 0.5rem;
 }
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10;
+    gap: 0.625rem;
 }
 
 .menu-button {
@@ -22,9 +22,9 @@
     background-color: #fff;
     padding: 0.5rem 0.7rem 0.3rem 0.7rem;
     border: none;
-    border-radius: 15px 15px 20px 20px;
-    font-size: 12px;
-    gap: 2;
+    border-radius: 0.938rem 0.938rem 1.25rem 1.25rem;
+    font-size: 0.75rem;
+    gap: 0.125rem;
 }
 
 .menu-button.active {
@@ -34,8 +34,8 @@
 }
 
 .menu-icon {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .menu-right {
@@ -43,7 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10;
+    gap: 0.625rem;
 }
 
 .banner {
@@ -53,5 +53,5 @@
 .banner img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }

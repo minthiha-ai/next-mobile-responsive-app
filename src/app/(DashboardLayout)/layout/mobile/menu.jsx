@@ -1,5 +1,4 @@
 import React from 'react'
-import '@/app/mobile.css';
 
 const MobileMenu = () => {
     return (

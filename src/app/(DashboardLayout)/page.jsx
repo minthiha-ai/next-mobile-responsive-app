@@ -16,7 +16,7 @@ import Social from '@/app/components/dashboards/modern/Social';
 import SellingProducts from '@/app/components/dashboards/modern/SellingProducts';
 import WeeklyStats from '@/app/components/dashboards/modern/WeeklyStats';
 import TopPerformers from '@/app/components/dashboards/modern/TopPerformers';
-import MobileHomePage from '../(MobileLayout)/MobileHomePage';
+import MobileHomePage from '../(MobileLayout)/mobile-home';
 
 export default function Dashboard() {
     const [isLoading, setLoading] = useState(true);

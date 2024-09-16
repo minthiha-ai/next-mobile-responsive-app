@@ -1,0 +1,511 @@
+/* General Styles */
+.deposit-page {
+    font-family: Arial, sans-serif;
+    background-color: #e4f0fe;
+    padding-top: 3.75rem !important;
+    padding-bottom: 3.75rem !important;
+}
+
+.white-space {
+    width: 44px;
+    height: 44px;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.deposit-page h1 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* General Wallet Card Styles */
+.wallet-card {
+    background: rgb(52, 87, 233);
+    background: linear-gradient(80deg, rgba(52, 87, 233, 1) 20%, rgba(53, 159, 234, 1) 83%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    margin: 1rem auto;
+}
+
+.wallet-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.wallet-header span {
+    font-size: 1rem;
+}
+
+.wallet-header img {
+    width: 1.5rem;
+}
+
+.wallet-balance {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    text-align: start;
+}
+
+.wallet-currency {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.wallet-currency select {
+    background: transparent;
+    border: 1px solid #fff;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Wallet Details */
+.wallet-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallet-detail-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.wallet-detail-item span {
+    font-size: 0.9rem;
+    color: #d1e0ff;
+}
+
+.wallet-detail-item strong {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.divider {
+    height: 30px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.deposit-method {
+    margin: 1rem;
+}
+
+.deposit-method h2 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.deposit-method ul {
+    list-style: none;
+    padding: 0;
+}
+
+.method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.7rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    margin-bottom: 0.5rem;
+}
+
+.method-info {
+    display: flex;
+    align-items: center;
+}
+
+.method-info img {
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+}
+
+.method-info-right {
+    display: flex;
+    align-items: center;
+}
+
+.method-info-right button {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+.hot-badge {
+    color: #ff4d4f;
+    background-color: #fff;
+    padding: 0.0005rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 0.65rem;
+    border: 1px solid #ff4d4f;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-content h3 {
+    text-align: start;
+    font-weight: lighter;
+    padding-left: 10px;
+}
+
+.close-btn {
+    background-color: #e5e5e5;
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+/* instant-topup-page */
+.instant-topup-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.75rem;
+    padding: 1.5rem;
+    background-color: #e4f0fe;
+}
+
+/* Input group styling */
+.instant-topup-page .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+.instant-topup-page .input-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0.4rem;
+}
+
+.instant-topup-page .input-container {
+    position: relative;
+}
+
+.instant-topup-page .input-container input {
+    padding: 0.8rem;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.instant-topup-page .clear-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+
+/* Preset amounts section */
+.instant-topup-page .preset-amounts {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.2rem;
+}
+
+.instant-topup-page .preset-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 0.6rem 1.2rem;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+}
+
+.instant-topup-page .preset-btn.active {
+    background-color: #f0f0f0;
+    border-color: #007bff;
+    color: #007bff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add stronger shadow when active */
+}
+
+.instant-topup-page .preset-btn:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    /* Increase shadow on hover */
+}
+
+/* Min and max amounts section */
+.instant-topup-page .min-max-amounts {
+    margin-bottom: 1.4rem;
+}
+
+.instant-topup-page .min-max-amounts p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.instant-topup-page .red-text {
+    color: #f00;
+    font-weight: bold;
+}
+
+/* Deposit button */
+.instant-topup-page .deposit-btn {
+    background-color: #1c5cff !important;
+    color: #fff !important;
+    padding: 0.75rem !important;
+    border-radius: 12px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    width: 100% !important;
+}
+
+/* bank option */
+.bank-popup {
+    text-align: center;
+}
+
+.popup-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.bank-options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Four equal columns */
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.bank-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bank-option {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.bank-option:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.bank-option img {
+    width: 40px;
+    /* Consistent image size */
+    height: 40px;
+}
+
+.bank-name {
+    font-size: 0.85rem;
+    color: #333;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* payment method */
+.payment-popup {
+    text-align: center;
+}
+
+.popup-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.payment-options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Four equal columns */
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.payment-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-option {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.payment-option:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.payment-option img {
+    width: 40px;
+    /* Consistent image size */
+    height: 40px;
+}
+
+.payment-name {
+    font-size: 0.85rem;
+    color: #333;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* bank transfer page  */
+/* Styles for Bank Transfer Page */
+.bank-transfer-page {
+    margin-top: 3.75rem;
+    padding: 0.5rem 1rem 0rem 1rem;
+}
+
+.bank-transfer-page .input-group {
+    margin-bottom: 0.5rem;
+}
+
+.bank-transfer-page .input-group label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.bank-transfer-page .input-container {
+    position: relative;
+}
+
+.bank-transfer-page .input-container input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+
+.bank-transfer-page .clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #888;
+    cursor: pointer;
+}
+
+.bank-transfer-page .preset-amounts {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.bank-transfer-page .preset-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bank-transfer-page .preset-btn.active {
+    background-color: #f0f0f0;
+    border-color: #007bff;
+    color: #007bff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bank-transfer-page .min-max-amounts {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.bank-transfer-page .min-max-amounts .red-text {
+    color: red;
+    font-weight: bold;
+}
+
+.bank-transfer-page .file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0.3rem 0.5rem;
+}
+
+.bank-transfer-page .upload-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.bank-transfer-page .deposit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.bank-transfer-page .deposit-btn:hover {
+    background-color: #005bb5;
+}

@@ -1,0 +1,436 @@
+/* Loan Page General */
+.loan-page {
+    background-color: #e4f0fe;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.75rem;
+    margin-bottom: 3.6rem;
+    padding: 1rem;
+}
+
+/* Loan Card */
+.loan-card {
+    background: linear-gradient(80deg, rgba(52, 87, 233, 1) 20%, rgba(53, 159, 234, 1) 83%);
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    /* Align content to the left */
+    max-width: 100%;
+    /* Full width */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.loan-card .card-title {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.loan-card .loan-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.loan-card .loan-details .currency {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.loan-card .loan-details .amount {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.loan-card .loan-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+.loan-card .loan-info .loan-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loan-card .loan-info .loan-content .amount {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Loan Actions */
+.loan-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.action {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.action img {
+    width: 30px;
+    height: 30px;
+}
+
+.action:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.action p {
+    font-size: 0.7rem;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Applied Loans Section */
+
+.applied-loans-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Loan Card List (Scrollable Section) */
+.loan-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+    max-height: 400px;
+    /* Set a fixed height for scrollable area */
+}
+
+/* Loan Card Item */
+.applied-loan-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.loan-card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.loan-card-header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Repayable Amount Header */
+.repayable-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.repayable-amount.overdue {
+    color: #ff4d4f;
+}
+
+.repayable-label {
+    margin-top: 0.5rem;
+}
+
+/* Repayment Button */
+.repayment-btn {
+    background-color: #169dff;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+    text-transform: none;
+    width: 9rem;
+    transition: background-color 0.3s ease;
+}
+
+.repayment-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Loan Progress Timeline */
+.loan-progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    position: relative;
+}
+
+/* Loan Step Circles */
+.loan-step {
+    position: relative;
+    font-size: 0.85rem;
+    color: #ccc;
+    text-align: center;
+}
+
+.loan-step.active {
+    color: #007bff;
+}
+
+/* Connectors between steps */
+.loan-connector {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #ddd;
+    margin: 0 5px;
+    position: relative;
+}
+
+.loan-step.active+.loan-connector {
+    background-color: #007bff;
+}
+
+/* Loan Details */
+.loan-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.loan-detail-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.loan-value {
+    font-weight: bold;
+    color: #d9d9d9;
+}
+
+.loan-value.overdue {
+    color: #ff4d4f;
+}
+
+/* Loan Apply Page Styles */
+.loan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    background-color: #346bea;
+    color: #fff;
+    /* Same as background */
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+}
+
+.loan-page-bg {
+    position: absolute;
+    /* Change to absolute to keep it in the flow but behind */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background-color: #346bea;
+    z-index: 0;
+    /* Make sure it is behind the main content but not fully out of flow */
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.loan-apply-page {
+    position: relative;
+    z-index: 1;
+    /* Ensure the content appears in front of the background */
+    padding: 0rem 1rem 1rem 1rem;
+    margin-top: 3.75rem;
+    margin-bottom: 4rem;
+}
+
+.loan-apply-page-title {
+    text-align: center;
+    display: block;
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Loan Amount Card */
+.loan-apply-page .loan-amount-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.loan-apply-page .loan-amount-card p.loan-limit {
+    text-align: start;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.loan-apply-page .loan-amount-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.loan-apply-page .loan-amount-selector button {
+    background-color: white;
+    color: #1c5cff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.loan-apply-page .loan-amount-selector span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1c5cff;
+}
+
+/* Loan Term Section */
+.loan-apply-page .loan-term-section {
+    padding-top: 1rem;
+    border-top: 1px solid #c5c5c56e;
+}
+
+.loan-apply-page .loan-term-section span {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: start;
+    font-weight: bold;
+    display: block;
+}
+
+.loan-apply-page .loan-term-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.loan-apply-page .loan-term-options button {
+    background-color: white;
+    color: #1c5cff;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-wrap: nowrap;
+    border: 1px solid #c5c5c5;
+    width: 5.8rem;
+}
+
+.loan-apply-page .loan-term-options button.active {
+    background-color: #1c5cff;
+    color: white;
+    border: 1px solid #1c5cff;
+}
+
+
+/* Loan Details Card */
+.loan-apply-page .loan-details-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.loan-apply-page .loan-details-card h4 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.loan-apply-page .loan-details-card p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.loan-apply-page .loan-details-card span:nth-child(1) {
+    font-weight: bold;
+    color: #888888;
+}
+
+.loan-apply-page .loan-details-card span:nth-child(2) {
+    font-weight: bold;
+    color: #1c5cff;
+}
+
+.loan-apply-page .loan-details-card .divider {
+    width: 100%;
+    border-top: 3px dotted #c5c5c56e;
+}
+
+/* Apply Button */
+.loan-apply-page .apply-btn {
+    background-color: #4099ff;
+    /* Adjust the color to match */
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    /* Adjust padding as needed */
+    border-radius: 20px;
+    /* Rounded corners */
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.15);
+
+    /* Light inset shadow */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    /* Smooth transitions */
+}
+
+.loan-apply-page .apply-btn:hover {
+    background-color: #368ce1;
+    /* Slightly darker color on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+        0 0 12px rgba(0, 0, 0, 0.05),
+        inset 0 2px 5px rgba(255, 255, 255, 0.4);
+    /* Enhance shadow on hover */
+}
+
+.loan-apply-page .apply-btn:active {
+    /* Full-width button */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1),
+        /* Softer shadow at the bottom */
+        0 0 10px rgba(0, 0, 0, 0.05),
+        /* Blur effect for surrounding glow */
+        inset 0 1px 4px rgba(255, 255, 255, 0.4);
+}

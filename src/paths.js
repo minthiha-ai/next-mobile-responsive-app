@@ -6,11 +6,29 @@ const paths = {
         return '/bank/deposit';
     },
     instantTopUp() {
-        return '/bank/deposit/instant-top-up'
+        return '/bank/deposit/instant-top-up';
     },
     bankTransfer() {
-        return '/bank/deposit/bank-transfer'
-    }
+        return '/bank/deposit/bank-transfer';
+    },
+    withdraw() {
+        return '/bank/withdraw';
+    },
+    transfer() {
+        return '/bank/transfer';
+    },
+    loan() {
+        return '/bank/loan';
+    },
+    loanApply() {
+        return '/bank/loan/loan-apply';
+    },
+    promotion() {
+        return '/bank/promotion';
+    },
+    tutorial() {
+        return '/bank/tutorial';
+    },
 };
 
 export default paths;

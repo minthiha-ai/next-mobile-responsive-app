@@ -6,11 +6,11 @@ import paths from '@/paths';
 const MiddleMenu = () => {
 
     const menuItems = [
-        { label: 'Withdraw', icon: '/mobile_images/icons/withdraw.png' },  // Replace with real icon URLs or class names
-        { label: 'Transfer', icon: '/mobile_images/icons/transfer.png' },
-        { label: 'Loan', icon: '/mobile_images/icons/loan.png' },
-        { label: 'Promotion', icon: '/mobile_images/icons/promotion.png' },
-        { label: 'Tutorial', icon: '/mobile_images/icons/tutorial.png' },
+        { label: 'Withdraw', icon: '/mobile_images/icons/withdraw.png', link: paths.withdraw() },
+        { label: 'Transfer', icon: '/mobile_images/icons/transfer.png', link: paths.transfer() },
+        { label: 'Loan', icon: '/mobile_images/icons/loan.png', link: paths.loan() },
+        { label: 'Promotion', icon: '/mobile_images/icons/promotion.png', link: paths.promotion() },
+        { label: 'Tutorial', icon: '/mobile_images/icons/tutorial.png', link: paths.tutorial() },
     ];
 
     return (
@@ -32,10 +32,12 @@ const MiddleMenu = () => {
             </div>
             <div className="menu-icons">
                 {menuItems.map((item, index) => (
-                    <div key={index} className="menu-item">
-                        <img src={item.icon} alt={item.label} className="menu-icon" />
-                        <span>{item.label}</span>
-                    </div>
+                    <Link href={item.link}>
+                        <div key={index} className="menu-item">
+                            <img src={item.icon} alt={item.label} className="menu-icon" />
+                            <span>{item.label}</span>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </div>

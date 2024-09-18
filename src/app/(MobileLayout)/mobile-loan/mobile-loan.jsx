@@ -4,6 +4,7 @@ import PageHeader from '@/app/components/mobile/PageHeader';
 import { Button } from '@mui/material';
 import paths from '@/paths';
 import Link from 'next/link';
+import InsetShadowButton from '@/app/components/customs/buttons/InsetShadowButton';
 
 const MobileLoanPage = () => {
     const loans = [
@@ -87,7 +88,12 @@ const MobileLoanPage = () => {
                                         </span>
                                     </div>
                                     <div className="loan-card-header-button">
-                                        <Button variant="contained" className="repayment-btn">Repayment</Button>
+                                        <InsetShadowButton
+                                            text="Repayment"
+                                            fontSize="0.7rem"
+                                            padding="0.2rem 1.5rem"
+                                            borderRadius="12px"
+                                        />
                                     </div>
                                 </div>
 

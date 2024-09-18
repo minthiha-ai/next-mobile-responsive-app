@@ -32,8 +32,8 @@ const MiddleMenu = () => {
             </div>
             <div className="menu-icons">
                 {menuItems.map((item, index) => (
-                    <Link href={item.link}>
-                        <div key={index} className="menu-item">
+                    <Link href={item.link} key={index} >
+                        <div className="menu-item">
                             <img src={item.icon} alt={item.label} className="menu-icon" />
                             <span>{item.label}</span>
                         </div>

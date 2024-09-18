@@ -33,6 +33,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: start;
     gap: 0.5rem;
 }
 
@@ -157,22 +158,6 @@
     margin-top: 0.5rem;
 }
 
-/* Repayment Button */
-.repayment-btn {
-    background-color: #169dff;
-    color: #fff;
-    border-radius: 20px;
-    padding: 0.2rem 1rem;
-    font-size: 1rem;
-    text-transform: none;
-    width: 9rem;
-    transition: background-color 0.3s ease;
-}
-
-.repayment-btn:hover {
-    background-color: #005bb5;
-}
-
 /* Loan Progress Timeline */
 .loan-progress {
     display: flex;
@@ -238,7 +223,7 @@
     left: 0;
     width: 100%;
     height: 30vh;
-    background-color: #346bea;
+    background: linear-gradient(80deg, #3457e9 20%, #359fea 100%);
     z-index: 0;
     /* Make sure it is behind the main content but not fully out of flow */
     border-bottom-left-radius: 100px;
@@ -380,42 +365,4 @@
 .loan-apply-page .loan-details-card .divider {
     width: 100%;
     border-top: 3px dotted #c5c5c56e;
-}
-
-/* Apply Button */
-.loan-apply-page .apply-btn {
-    background-color: #4099ff;
-    /* Adjust the color to match */
-    color: white;
-    font-size: 1rem;
-    padding: 0.75rem 2rem;
-    /* Adjust padding as needed */
-    border-radius: 20px;
-    /* Rounded corners */
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.15);
-
-    /* Light inset shadow */
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
-    /* Smooth transitions */
-}
-
-.loan-apply-page .apply-btn:hover {
-    background-color: #368ce1;
-    /* Slightly darker color on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
-        0 0 12px rgba(0, 0, 0, 0.05),
-        inset 0 2px 5px rgba(255, 255, 255, 0.4);
-    /* Enhance shadow on hover */
-}
-
-.loan-apply-page .apply-btn:active {
-    /* Full-width button */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1),
-        /* Softer shadow at the bottom */
-        0 0 10px rgba(0, 0, 0, 0.05),
-        /* Blur effect for surrounding glow */
-        inset 0 1px 4px rgba(255, 255, 255, 0.4);
 }

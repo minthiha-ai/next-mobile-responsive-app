@@ -277,22 +277,6 @@
     font-weight: bold;
 }
 
-/* Deposit button */
-.instant-topup-page .deposit-btn {
-    width: 100%;
-    padding: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.instant-topup-page .deposit-btn:hover {
-    background-color: #005bb5;
-}
-
 /* bank option */
 .bank-popup {
     text-align: center;
@@ -498,19 +482,4 @@
 .bank-transfer-page .upload-btn {
     background-color: #007bff;
     color: white;
-}
-
-.bank-transfer-page .deposit-btn {
-    width: 100%;
-    padding: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.bank-transfer-page .deposit-btn:hover {
-    background-color: #005bb5;
 }

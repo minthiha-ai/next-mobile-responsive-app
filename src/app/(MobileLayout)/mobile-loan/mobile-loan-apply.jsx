@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import PageHeader from '@/app/components/mobile/PageHeader';
 import { Button } from '@mui/material';
 import paths from '@/paths';
+import InsetShadowButton from '@/app/components/customs/buttons/InsetShadowButton';
+import { WidthFull } from '@mui/icons-material';
 
 const LoanApply = () => {
     const [loanAmount, setLoanAmount] = useState(1000);
@@ -48,9 +50,14 @@ const LoanApply = () => {
                     <p><span>Due date</span><span>27-07-2024</span></p>
                     <p><span>Total repayment</span><span>RM {loanAmount + 100}.00</span></p>
                     <div className="divider"></div>
-                    <Button variant="contained" className="apply-btn">
-                        Apply
-                    </Button>
+                    <InsetShadowButton
+                        text="Apply"
+                        fontSize="1rem"
+                        padding="18px, 32px, 18px, 32px"
+                        borderRadius="12px"
+                        width="100%"
+                        inset
+                    />
                 </div>
 
 

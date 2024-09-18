@@ -3,7 +3,6 @@
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
-    background-color: #e4f0fe;
     overflow-y: auto;
     /* Enable scrolling for the content */
 }
@@ -15,6 +14,7 @@
     padding-top: 3.75rem;
     /* Space for fixed header */
     padding-bottom: 3.75rem;
+    background-color: #e4f0fe;
     /* Space for fixed bottom nav */
 }
 
@@ -42,7 +42,7 @@
     top: 0rem;
     left: 0rem;
     width: 100%;
-    background-color: #346bea;
+    background: linear-gradient(80deg, #3457e9 20%, #359fea 100%);
     color: #fff;
     /* Same as background */
     padding: 0.5rem 1rem;
@@ -213,7 +213,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background: #EFF8FF;
     position: fixed;
     bottom: 0;
     width: 100%;

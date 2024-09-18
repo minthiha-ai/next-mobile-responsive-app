@@ -1,86 +1,132 @@
 'use client';
 import React, { useState } from 'react';
-import PageHeader from '@/app/components/mobile/PageHeader'; // Assuming you have this header component
-import { Button } from '@mui/material';
-import paths from '@/paths'; // Assuming paths are predefined
+import PageHeader from '@/app/components/mobile/PageHeader';
+import Link from 'next/link';
+import paths from '@/paths';
+import InsetShadowButton from '@/app/components/customs/buttons/InsetShadowButton';
+import { TextField, IconButton } from '@mui/material';
+import ClearIcon from '@mui/icons-material/Clear';
 
-const MobileWithdraw = () => {
-    const [selectedBank, setSelectedBank] = useState('Affin Bank Berhad');
-    const [withdrawAmount, setWithdrawAmount] = useState(0);
-
-    // Handle amount input clear
-    const handleClearAmount = () => {
-        setWithdrawAmount(0);
-    };
+const WithdrawPage = () => {
+    const [selectedBank, setSelectedBank] = useState('Affin Bank');
+    const banks = [
+        { name: 'Affin Bank Berhad', account: '1004 6007 0169', logo: '/mobile_images/icons/withdraw/affin-bank.png' },
+        { name: 'Public Bank', account: '2346 8421 8990', logo: '/mobile_images/icons/withdraw/public-bank.png' }
+    ];
 
     return (
         <>
-            <PageHeader backUrl={paths.home()} title="Withdraw" />
-            <div className="withdraw-page">
-                {/* Balance Section */}
-                <div className="balance-section">
-                    <p>Balance</p>
-                    <div className="balance-amount">
-                        <span className="currency">RM</span>
-                        <span className="amount">199,900</span>
-                    </div>
-                    <p className="turnover-info">Turnover requirement</p>
-                    <div className="turnover-amount">199,900/0.00</div>
-                </div>
-
-                {/* Bank Options */}
-                <div className="bank-options">
-                    <h4>Bank options</h4>
-                    <div className="banks-list">
-                        <div className={`bank-item ${selectedBank === 'Affin Bank Berhad' ? 'active' : ''}`}
-                            onClick={() => setSelectedBank('Affin Bank Berhad')}>
-                            <img src="/affinbank-logo.png" alt="Affin Bank" />
-                            <p className="bank-name">Affin Bank Berhad</p>
-                            <p className="bank-number">1004 6007 0169</p>
+            <PageHeader backUrl={paths.home()} title="Withdraw" headerClass="blue-header" arrowColor="white" />
+            <div className="withdraw-container">
+                <div className="withdraw-page">
+                    {/* Balance and Turnover */}
+                    <div className="balance-info">
+                        <div className="balance-header">
+                            <div className="balance-title">
+                                <span>Balance</span>
+                                <img src="/mobile_images/icons/eye.png" alt="" />
+                            </div>
+                            <div className="balance-currency">
+                                <select>
+                                    <option value="RM">RM</option>
+                                    <option value="RM">USDT</option>
+                                    <option value="RM">YUAN</option>
+                                </select>
+                            </div>
                         </div>
-                        <div className={`bank-item ${selectedBank === 'Public Bank' ? 'active' : ''}`}
-                            onClick={() => setSelectedBank('Public Bank')}>
-                            <img src="/publicbank-logo.png" alt="Public Bank" />
-                            <p className="bank-name">Public Bank</p>
-                            <p className="bank-number">2346 8421 8990</p>
+                        <div className="balance-amount">
+                            <span>RM</span>
+                            <span>199,900</span>
                         </div>
-                        <Button className="add-new-bank-btn">Add new bank</Button>
+
+                        <div className="balance-details">
+                            <span>Turnover requirement</span>
+                            <span>199,900/0.00</span>
+                        </div>
+
+                    </div>
+                    <div className="bank-body">
+                        {/* Bank Options */}
+                        <div className="bank-options">
+                            <div className="options-header">
+                                <span>Bank options</span>
+                                <Link href={paths.addBank()}>
+                                    <InsetShadowButton
+                                        text="Add new bank"
+                                        fontSize="0.7rem"
+                                        padding="0.2rem 2rem"
+                                        borderRadius="11px"
+                                        fontWeight="light"
+                                        inset
+                                    />
+                                </Link>
+                            </div>
+                            <div className="bank-list">
+                                {banks.map((bank, index) => (
+                                    <div key={index} className={`bank-card ${selectedBank === bank.name ? 'active' : ''}`} onClick={() => setSelectedBank(bank.name)}>
+                                        <img src={bank.logo} alt={bank.name} className="bank-logo" />
+                                        <div className="bank-details">
+                                            <span>{bank.name}</span>
+                                            <span>{bank.account}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Full Name and Amount */}
+                        <div className="withdraw-form">
+                            <div className="input-group">
+                                <label>Full Name</label>
+                                <TextField
+                                    variant="outlined"
+                                    value="Crab Enterprise"
+                                    disabled
+                                    fullWidth
+                                    InputProps={{ style: { borderRadius: '8px' } }}
+                                />
+                            </div>
+                            <div className="input-group">
+                                <label>Amount (RM)</label>
+                                <div className="input-container">
+                                    <TextField
+                                        variant="outlined"
+                                        type="number"
+                                        placeholder="0.00"
+                                        fullWidth
+                                        InputProps={{ style: { borderRadius: '8px' } }}
+                                    />
+                                    <IconButton className="clear-btn" onClick={() => {/* handle clear */ }}>
+                                        <ClearIcon />
+                                    </IconButton>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        {/* Withdraw Details */}
+                        <div className="withdraw-details">
+                            <span>Remaining withdraw times:</span> <span className="red-text">3</span>
+                        </div>
+                        <div className="withdraw-details">
+                            <span>Withdraw charges:</span> <span className="red-text">0.00</span>
+                        </div>
+
+                        <div className="withdraw-button">
+                            {/* Withdraw Button */}
+                            <InsetShadowButton
+                                text="Withdraw"
+                                fontSize="1rem"
+                                padding="0.5rem 6rem"
+                                borderRadius="10px"
+                                inset
+                            />
+                        </div>
                     </div>
                 </div>
-
-                {/* Form Section */}
-                <div className="form-section">
-                    <div className="input-group">
-                        <label>Full Name</label>
-                        <input type="text" value="Crab Enterprise" disabled />
-                    </div>
-
-                    <div className="input-group">
-                        <label>Amount (RM)</label>
-                        <input
-                            type="number"
-                            value={withdrawAmount === 0 ? "" : withdrawAmount}
-                            placeholder="0.00"
-                            onChange={(e) => setWithdrawAmount(Number(e.target.value))}
-                        />
-                        <button className="clear-btn" onClick={handleClearAmount}>✕</button>
-                    </div>
-
-                    <p className="withdraw-info">
-                        <span>Remaining withdraw times: </span>
-                        <span className="red-text">3</span>
-                    </p>
-                    <p className="withdraw-info">
-                        <span>Withdraw charges: </span>
-                        <span className="red-text">0.00</span>
-                    </p>
-                </div>
-
-                {/* Withdraw Button */}
-                <Button className="withdraw-btn">Withdraw</Button>
             </div>
         </>
     );
 };
 
-export default MobileWithdraw;
+export default WithdrawPage;

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import PageHeader from '@/app/components/mobile/PageHeader';
 import paths from '@/paths';
+import InsetShadowButton from '@/app/components/customs/buttons/InsetShadowButton';
 
 const InstantTopUp = () => {
     const [selectedAmount, setSelectedAmount] = useState(0);
@@ -66,9 +67,13 @@ const InstantTopUp = () => {
                 </div>
 
                 {/* Deposit Button */}
-                <button className="deposit-btn">
-                    Deposit
-                </button>
+                <InsetShadowButton
+                    text="Deposit"
+                    fontSize="1rem"
+                    padding="18px, 32px, 18px, 32px"
+                    borderRadius="12px"
+                    inset
+                />
             </div>
         </>
     );

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import PageHeader from '@/app/components/mobile/PageHeader';
 import { Button } from '@mui/material';
 import paths from '@/paths';
+import InsetShadowButton from '@/app/components/customs/buttons/InsetShadowButton';
 
 const BankTransfer = () => {
     const [selectedAmount, setSelectedAmount] = useState(0);
@@ -95,9 +96,14 @@ const BankTransfer = () => {
                 </div>
 
                 {/* Deposit Button */}
-                <Button variant="contained" color="primary" className="deposit-btn">
-                    Deposit
-                </Button>
+                <InsetShadowButton
+                    text="Deposit"
+                    fontSize="1rem"
+                    padding="18px, 32px, 18px, 32px"
+                    borderRadius="12px"
+                    width="100%"
+                    inset
+                />
             </div>
         </>
     );

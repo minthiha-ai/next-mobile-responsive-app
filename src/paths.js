@@ -14,6 +14,9 @@ const paths = {
     withdraw() {
         return '/bank/withdraw';
     },
+    addBank() {
+        return '/bank/withdraw/add-bank';
+    },
     transfer() {
         return '/bank/transfer';
     },

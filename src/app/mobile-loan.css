@@ -231,21 +231,6 @@
 }
 
 /* Loan Apply Page Styles */
-.loan-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0rem;
-    left: 0rem;
-    width: 100%;
-    background-color: #346bea;
-    color: #fff;
-    /* Same as background */
-    padding: 0.5rem 1rem;
-    z-index: 1000;
-}
-
 .loan-page-bg {
     position: absolute;
     /* Change to absolute to keep it in the flow but behind */

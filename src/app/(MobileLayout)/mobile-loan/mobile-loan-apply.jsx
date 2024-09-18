@@ -18,7 +18,7 @@ const LoanApply = () => {
 
     return (
         <>
-            <PageHeader backUrl={paths.loan()} title="Loan Apply" headerClass="loan-header" arrowColor='white' />
+            <PageHeader backUrl={paths.loan()} title="Loan Apply" headerClass="blue-header" arrowColor='white' />
             <div className="loan-page-bg"></div>
             <div className="loan-apply-page">
                 <span className="loan-apply-page-title">You can loan up to MYR 1,000</span>

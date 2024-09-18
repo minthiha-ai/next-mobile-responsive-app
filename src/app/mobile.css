@@ -34,6 +34,21 @@
     border-bottom: 0.063rem solid #ddd;
 }
 
+.blue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    background-color: #346bea;
+    color: #fff;
+    /* Same as background */
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+}
+
 .menuButton {
     font-size: 1.5rem;
     background: none;

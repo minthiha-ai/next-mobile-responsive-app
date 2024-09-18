@@ -4,6 +4,7 @@ import "./global.css";
 import "./mobile.css";
 import "./mobile-home.css";
 import "./mobile-deposit.css";
+import "./mobile-withdraw.css";
 import "./mobile-loan.css";
 
 export const metadata = {

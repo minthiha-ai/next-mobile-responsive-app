@@ -71,7 +71,7 @@ const InstantTopUp = () => {
                     text="Deposit"
                     fontSize="1rem"
                     padding="18px, 32px, 18px, 32px"
-                    borderRadius="12px"
+                    borderradius="12px"
                     inset
                 />
             </div>

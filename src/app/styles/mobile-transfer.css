@@ -1,0 +1,370 @@
+/* Transfer Page Styling */
+.transfer-wraper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.125rem;
+    background-color: #e4f0fe;
+    min-height: 100vh;
+}
+
+.transfer-page {
+    margin-top: 3.75rem;
+    padding: 1.5rem 2.5rem;
+}
+
+/* Tabs (Transfer, Contact, Ang Pao) */
+.transfer-page .tab-header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    background-color: #dfeaf6;
+    border-radius: 12px;
+}
+
+.transfer-page .tab-btn {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    background-color: #dfeaf6;
+    border: none;
+    border-radius: 12px;
+    color: #888;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transfer-page .tab-btn.active {
+    background-color: #fff;
+    color: #1c5cff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Transfer Form */
+.transfer-page .transfer-form {
+    margin-bottom: 2rem;
+}
+
+.transfer-page .input-group {
+    margin-bottom: 1.5rem;
+}
+
+.transfer-page .input-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.transfer-page .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Submit Button */
+.transfer-page .submit-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transfer-page .submit-btn:hover {
+    background-color: #154bcf;
+}
+
+/* Recent Transfers */
+.transfer-page .recent-transfers .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.transfer-page .recent-transfers span {
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.transfer-page .avatars {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.transfer-page .avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.transfer-page .avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transfer-page .avatar span {
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    color: #333;
+}
+
+/* transfer detail Wrapper */
+.transfer-details-wraper {
+    background-color: #f3f8fe;
+    margin-top: 3.75rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.transfer-details-wraper .transfer-details-page {
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+}
+
+/* User Info */
+.transfer-details-wraper .user-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.transfer-details-wraper .user-info .user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transfer-details-wraper .user-info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.transfer-details-wraper .user-info p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
+
+/* Amount Input Section */
+.transfer-details-wraper .amount-input-section {
+    margin-bottom: 1.5rem;
+}
+
+.transfer-details-wraper .input-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Currency Selector */
+.transfer-details-wraper .currency-selector {
+    width: 100px;
+}
+
+.transfer-details-wraper .currency-selector .MuiOutlinedInput-root {
+    border-radius: 12px;
+    background-color: #f3f8fe;
+    padding-right: 10px;
+}
+
+.transfer-details-wraper .currency-selector img {
+    width: 18px;
+    margin-right: 8px;
+}
+
+/* Input Group */
+.transfer-details-wraper .input-group {
+    position: relative;
+}
+
+.transfer-details-wraper .input-container {
+    display: flex;
+    align-items: center;
+}
+
+.transfer-details-wraper .input-container .MuiOutlinedInput-root {
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    padding-right: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.transfer-details-wraper .input-container .MuiOutlinedInput-input {
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+.transfer-details-wraper .input-container .clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* Fee Details */
+.transfer-details-wraper .fee-details {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.transfer-details-wraper .fee-details .red-text {
+    color: red;
+    font-weight: bold;
+}
+
+/* Transfer Button */
+.transfer-details-wraper .transfer-btn {
+    text-align: center;
+}
+
+/* Payment Success Page */
+.payment-success-page {
+    background: linear-gradient(180deg, #4294f7 0%, #005ac1 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+/* Payment Header Styles */
+.payment-success-page-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+/* Fab Buttons */
+.payment-success-page-header .MuiFab-root {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: none;
+    width: 40px;
+    height: 40px;
+}
+
+.payment-success-page-header .MuiFab-root:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Centered Logo */
+.payment-success-page-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    margin-left: -40px;
+}
+
+/* Payment Success Content */
+.payment-success-page-content {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    padding: 2rem 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.payment-success-page-success-icon {
+    font-size: 3.5rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    padding: 0.6rem;
+    background: #23A26D1F;
+    border-radius: 100%;
+}
+
+.payment-success-page-success-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.payment-success-page-transaction-details {
+    text-align: left;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+}
+
+.payment-success-page-detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+}
+
+.payment-success-page-amount {
+    font-weight: bold;
+    color: #333;
+}
+
+.payment-success-page-divider {
+    margin: 1.5rem 0;
+    border-top: 1px dashed #E0E0E0;
+}
+
+/* PDF Receipt Button */
+.payment-success-page-pdf-btn {
+    margin-top: 1rem;
+    padding: 0.85rem;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid #2694E5;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Back to Home Button */
+.payment-success-page-back-home-btn {
+    background-color: white;
+    color: #2694E5;
+    margin-top: 1.5rem;
+    padding: 0.85rem;
+    border-radius: 11px;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-transform: none;
+}
+
+.payment-success-page-back-home-btn:hover {
+    background-color: #f0f0f0;
+}

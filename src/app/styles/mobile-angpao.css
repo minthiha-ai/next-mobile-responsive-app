@@ -1,0 +1,312 @@
+/* Ang Pao Page Styles */
+.ang-pao-page {
+    background-color: #f9f9f9;
+    margin-top: 70.34px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #ED4747 0%, #FC7685 100%);
+}
+
+/* Tabs Section */
+.ang-pao-page .MuiTabs-root {
+    background-color: #fff;
+    border-bottom: 2px solid #f3f3f3;
+    margin-bottom: 1rem;
+    display: flex;
+    width: 100%;
+}
+
+.ang-pao-page .MuiTab-root {
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 600;
+    color: #999;
+    width: 40%;
+}
+
+.ang-pao-page .Mui-selected {
+    color: #2694E5 !important;
+}
+
+.ang-pao-page .MuiTabs-indicator {
+    background-color: #2694E5;
+    height: 4px;
+}
+
+.ang-pao-page .angpa-conent-wraper {
+    width: 100%;
+    padding: 0rem 1.5rem;
+}
+
+.ang-pao-page .ang-pao-content {
+    background: #F8F8F8;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tab Buttons (Lucky & Regular) */
+.ang-pao-page .tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    background-color: #f3f3f3;
+    border-radius: 12px;
+}
+
+.ang-pao-page .tab-buttons .MuiButton-root {
+    flex: 1;
+    font-weight: 600;
+    text-transform: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+}
+
+.ang-pao-page .tab-buttons .MuiButton-root.active {
+    background-color: #2694E5;
+    color: #fff;
+}
+
+.ang-pao-page .tab-buttons .MuiButton-root:not(.active) {
+    background-color: transparent;
+    /* border: 1px solid #cccccc; */
+    color: #000;
+}
+
+/* Form Fields */
+.ang-pao-page .form-group {
+    margin-bottom: 1rem;
+}
+
+.ang-pao-page .form-group .input-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.ang-pao-page .claim-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ang-pao-page .input-field {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.ang-pao-page .MuiTextField-root {
+    width: 100%;
+}
+
+.ang-pao-page .MuiInputBase-root {
+    font-size: 0.9rem;
+}
+
+/* Amount Summary */
+.ang-pao-page .amount-summary {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #d9534f;
+    margin: 1.5rem 0;
+}
+
+/* Send Button */
+.ang-pao-page .submit-btn {
+    background-color: #d9534f;
+    color: white;
+    text-transform: none;
+    padding: 0.85rem;
+    border-radius: 12px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.ang-pao-page .submit-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Ang Pao Recipt Page */
+.angpao-recipt-page {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/mobile_images/background/angpao-bg.png') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.angpao-recipt-page .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #FDFDFD;
+    text-shadow: 0px 4px 4px 0px #00000040;
+}
+
+/* Ang Pao Envelope Section */
+.angpao-recipt-page .angpao-envelope {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.angpao-recipt-page .envelope-image-wrapper {
+    position: relative;
+    padding: 0rem 2.5rem;
+}
+
+.angpao-recipt-page .envelope-image {
+    width: 100%;
+    height: auto;
+}
+
+.angpao-recipt-page .angpao-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.angpao-recipt-page .new-year-message {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin: 1rem 0rem;
+}
+
+.angpao-recipt-page .cash-label {
+    font-size: 1rem;
+    color: #999;
+    margin: 1rem 0rem;
+}
+
+.angpao-recipt-page .amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #D9534F;
+    margin-bottom: 4rem;
+}
+
+.angpao-recipt-page .angpao-sender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.angpao-recipt-page .sender-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+}
+
+.angpao-recipt-page .sender-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Share Options */
+.angpao-recipt-page .share-options {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.angpao-recipt-page .share-options .share-to {
+    font-size: 1rem;
+}
+
+.angpao-recipt-page .share-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+    gap: 1rem;
+}
+
+.angpao-recipt-page .share-icon {
+    display: flex;
+    flex-direction: column;
+}
+
+.angpao-recipt-page .share-icon img {
+    width: 5rem;
+}
+
+/* OK Button */
+.angpao-recipt-page .ok-btn-container {
+    display: flex;
+    justify-content: center;
+    /* Center the button */
+    width: 100%;
+    text-align: center;
+    /* Ensure the text is centered */
+}
+
+.angpao-recipt-page .ok-btn {
+    background: #FD583A;
+    color: white;
+    text-transform: none;
+    padding: 0.85rem;
+    width: 80%;
+    /* Set button width */
+    border-radius: 12px;
+    max-width: 400px;
+    /* Limit the maximum width */
+}
+
+.angpao-recipt-page .ok-btn:hover {
+    background-color: #c9302c;
+}
+
+.angpao-recipt-page .angpao-recieve-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+
+/* Password Field */
+.angpao-recipt-page .angpao-recieve-content .password {
+    margin-top: 1.5rem;
+    width: 70%;
+}
+
+.angpao-recipt-page .angpao-recieve-content .btn-claim {
+    background-color: #FD583A;
+    color: white;
+    text-transform: none;
+    margin-top: 1rem;
+    padding: 0.85rem;
+    border-radius: 12px;
+    width: 60%;
+}
+
+.angpao-recipt-page .angpao-recieve-content .btn-claim:hover {
+    background-color: #c9302c;
+}

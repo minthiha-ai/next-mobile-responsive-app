@@ -12,10 +12,10 @@
     flex-direction: column;
     row-gap: 0.125rem;
     padding-top: 3.75rem;
-    /* Space for fixed header */
     padding-bottom: 3.75rem;
     background-color: #e4f0fe;
-    /* Space for fixed bottom nav */
+    min-height: 100vh;
+    justify-content: space-evenly;
 }
 
 .header {
@@ -27,11 +27,27 @@
     left: 0rem;
     width: 100%;
     background-color: #e4f0fe;
-    /* Same as background */
     padding: 0.5rem 1rem;
     z-index: 1000;
-    /* Ensure it stays on top */
     border-bottom: 0.063rem solid #ddd;
+    min-height: 61px;
+}
+
+.angpao-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    background: #D74A3F;
+    box-shadow: 0px 1px 2px 0px #00000040;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+    border-bottom: 0.063rem solid #ddd;
+    min-height: 61px;
+    color: #fff;
 }
 
 .blue-header {
@@ -44,9 +60,9 @@
     width: 100%;
     background: linear-gradient(80deg, #3457e9 20%, #359fea 100%);
     color: #fff;
-    /* Same as background */
     padding: 0.5rem 1rem;
     z-index: 1000;
+    min-height: 61px;
 }
 
 .menuButton {
@@ -206,6 +222,7 @@
 .menu-item span {
     font-size: 0.625rem;
     font-weight: bold;
+    color: #000;
 }
 
 /* Bottom Navigation container */

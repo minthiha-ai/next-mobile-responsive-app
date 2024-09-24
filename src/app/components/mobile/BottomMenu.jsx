@@ -22,12 +22,14 @@ const BottomMenu = () => {
                 <img src="/mobile_images/icons/transaction.png" alt="Transaction" />
                 <span>Transaction</span>
             </button>
-            <button className={`nav-item ${activeIndex === 2 ? 'active' : ''} invite-button`} onClick={() => handleItemClick(0)}>
-                <div className="invite-img">
-                    <img src="/mobile_images/icons/invite.png" alt="Invite" />
-                </div>
-                <span>Invite</span>
-            </button>
+            <Link href={paths.invite()}>
+                <button className={`nav-item ${activeIndex === 2 ? 'active' : ''} invite-button`} onClick={() => handleItemClick(0)}>
+                    <div className="invite-img">
+                        <img src="/mobile_images/icons/invite.png" alt="Invite" />
+                    </div>
+                    <span>Invite</span>
+                </button>
+            </Link>
             <button className={`nav-item ${activeIndex === 3 ? 'active' : ''}`} onClick={() => handleItemClick(0)}>
                 <img src="/mobile_images/icons/live-chat.png" alt="Live Chat" />
                 <span>Live Chat</span>

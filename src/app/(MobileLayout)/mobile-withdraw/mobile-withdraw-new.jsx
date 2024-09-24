@@ -70,7 +70,7 @@ const WithdrawPageNew = () => {
                             text="Add new bank"
                             fontSize="1rem"
                             padding="0.6rem 2rem"
-                            borderRadius="30px"
+                            borderradius="30px"
                         />
                     </Box>
                     <Box sx={{ display: 'flex', gap: 2 }}>

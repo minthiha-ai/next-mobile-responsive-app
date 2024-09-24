@@ -20,6 +20,27 @@ const paths = {
     transfer() {
         return '/bank/transfer';
     },
+    transferDetail() {
+        return '/bank/transfer/detail';
+    },
+    transferRecipt() {
+        return '/bank/transfer/detail/recipt'
+    },
+    contact() {
+        return '/bank/transfer/contact';
+    },
+    contactDetail() {
+        return '/bank/transfer/contact/detail';
+    },
+    angpao() {
+        return '/bank/transfer/angpao';
+    },
+    angpaoSend() {
+        return '/bank/transfer/angpao/send';
+    },
+    angpaoRecieve() {
+        return '/bank/transfer/angpao/recieve';
+    },
     loan() {
         return '/bank/loan';
     },
@@ -31,6 +52,9 @@ const paths = {
     },
     tutorial() {
         return '/bank/tutorial';
+    },
+    invite() {
+        return '/invite';
     },
 };
 

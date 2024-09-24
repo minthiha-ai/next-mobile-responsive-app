@@ -92,7 +92,7 @@ const MobileLoanPage = () => {
                                             text="Repayment"
                                             fontSize="0.7rem"
                                             padding="0.2rem 1.5rem"
-                                            borderRadius="12px"
+                                            borderradius="12px"
                                         />
                                     </div>
                                 </div>

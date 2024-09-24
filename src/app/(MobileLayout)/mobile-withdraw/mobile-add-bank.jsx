@@ -67,7 +67,7 @@ const AddBankPage = () => {
                         text="Submit"
                         fontSize="1rem"
                         padding="0.5rem 6rem"
-                        borderRadius="11px"
+                        borderradius="11px"
                         fontWeight="bold"
                         inset
                     />

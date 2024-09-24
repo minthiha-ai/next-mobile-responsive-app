@@ -1,0 +1,20 @@
+/* Leaderboard Tab Content */
+.invite-friends-page .leader-section {
+    background: #FDFDFD;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100vh;
+}
+
+/* Leaderboard Title */
+.invite-friends-page .leaderboard-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}

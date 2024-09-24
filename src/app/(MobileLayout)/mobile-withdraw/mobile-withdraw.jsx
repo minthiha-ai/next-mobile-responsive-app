@@ -55,7 +55,7 @@ const WithdrawPage = () => {
                                         text="Add new bank"
                                         fontSize="0.7rem"
                                         padding="0.2rem 2rem"
-                                        borderRadius="11px"
+                                        borderradius="11px"
                                         fontWeight="light"
                                         inset
                                     />

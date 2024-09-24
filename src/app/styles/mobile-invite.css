@@ -1,0 +1,473 @@
+/* Invite Friends Page Styles */
+.invite-friends-page {
+    background: #346BEA;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.75rem 0rem;
+}
+
+.invite-friends-page .tab-buttons {
+    background-color: transparent;
+    position: sticky;
+    /* Make the tabs sticky */
+    top: 0;
+    /* Stick to the top */
+    z-index: 1000;
+    /* Ensure it stays on top of other elements */
+    /* Optionally add a background to the tabs to distinguish them from content */
+    background-color: #346BEA;
+    /* Keeps the background color consistent */
+}
+
+/* Custom Tabs Section - Buttons Style */
+.invite-friends-page .MuiTabs-root {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    /* Space tabs like buttons */
+    padding: 1rem;
+}
+
+.invite-friends-page .MuiTab-root {
+    font-size: 0.9rem;
+    text-transform: none;
+    font-weight: 600;
+    color: #fff;
+    width: auto;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.invite-friends-page .MuiTab-root.Mui-selected {
+    background: #628FF8 !important;
+    color: #fff !important;
+    border-radius: 7px;
+}
+
+.invite-friends-page .MuiTabs-indicator {
+    display: none;
+}
+
+
+/* Overview Tab Content */
+.invite-friends-page .overview-section {
+    background: #FDFDFD;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.invite-friends-page .share-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Invite Link Input */
+.invite-friends-page .invite-link-field {
+    margin-bottom: 1rem;
+    width: 85%;
+}
+
+.invite-friends-page .copy-btn {
+    background-color: #2694E5;
+    color: #fff;
+    text-transform: none;
+}
+
+.invite-friends-page .qr-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.invite-friends-page .qr-code-img {
+    width: 150px;
+    height: 150px;
+}
+
+.invite-friends-page .qr-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.invite-friends-page .qr-button {
+    background: #346BEA;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    width: 11.5rem;
+}
+
+/* Commission Section */
+.invite-friends-page .commission-section {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0rem 3rem;
+}
+
+.invite-friends-page .commission-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.invite-friends-page .commission-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Income Calculator */
+.invite-friends-page .income-calculator {
+    margin: 2rem 0rem;
+    border: 1px solid;
+    background: linear-gradient(180deg, #57AEFE 0%, #6B71FF 100%);
+    border-image-source: linear-gradient(269.39deg, rgba(87, 174, 254, 0.3) 49.47%, rgba(107, 113, 255, 0.3) 95.75%);
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.invite-friends-page .income-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.invite-friends-page .income-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FDFDFD;
+}
+
+.invite-friends-page .income-description {
+    font-size: 0.875rem;
+    color: #FDFDFD;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Progress Bar Styles */
+.invite-friends-page .progress-container {
+    width: 90%;
+    margin: 1rem auto;
+    /* Center align */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    /* Center align the progress bar */
+}
+
+.invite-friends-page .progress-bar {
+    height: 15px;
+    width: 100%;
+    /* Ensure it stretches across the width */
+    border-radius: 10px;
+    background-color: #fff;
+    /* Light background for the bar */
+}
+
+/* Progress Bar Color */
+.MuiLinearProgress-barColorPrimary {
+    background: #346BEA;
+    /* Customize the progress color */
+    border-radius: 8px;
+    /* Smooth rounded corners */
+}
+
+/* Marketing Tab Content */
+.invite-friends-page .marketing-section {
+    background: #FDFDFD;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.invite-friends-page .marketing-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.invite-friends-page .marketing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.invite-friends-page .marketing-post {
+    width: 100%;
+}
+
+/* Rewards Tab Content */
+.invite-friends-page .rewards-section {
+    background: #FDFDFD;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.invite-friends-page .rewards-section .stats-title,
+.invite-friends-page .rewards-section .tasks-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.invite-friends-page .rewards-section .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+    /* Added padding for better spacing */
+}
+
+.invite-friends-page .rewards-section .stats-box {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    /* Added subtle shadow for better visibility */
+}
+
+.invite-friends-page .rewards-section .stats-box.green {
+    background-color: #28a745;
+}
+
+.invite-friends-page .rewards-section .stats-box.blue {
+    background-color: #007bff;
+}
+
+.invite-friends-page .rewards-section .stats-box.orange {
+    background-color: #ffc107;
+}
+
+.invite-friends-page .rewards-section .stats-box.red {
+    background-color: #dc3545;
+}
+
+.invite-friends-page .rewards-section .stats-box span:nth-child(1) {
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.invite-friends-page .rewards-section .stats-box span:nth-child(2) {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.invite-friends-page .rewards-section .tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+    /* Added padding for better alignment */
+}
+
+.invite-friends-page .rewards-section .task-item {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 0.75rem 1rem;
+    /* Increased padding for better look */
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* Added a subtle shadow */
+}
+
+.invite-friends-page .rewards-section .task-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.invite-friends-page .rewards-section .task-details {
+    flex-grow: 1;
+}
+
+.invite-friends-page .rewards-section .task-details span {
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+    /* Set text color for better contrast */
+}
+
+.invite-friends-page .rewards-section .claim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.invite-friends-page .rewards-section .claim-btn {
+    border: 1px solid #346BEA;
+    color: #346BEA;
+    text-transform: none;
+    padding: 0rem 1rem;
+    border-radius: 7px;
+    font-size: 0.85rem;
+    font-weight: bolder;
+    border-radius: 7px;
+    /* Adjusted font-size */
+}
+
+.invite-friends-page .rewards-section .claim-btn:hover {
+    background-color: #2694E5;
+}
+
+/* Leaderboard Tab Content */
+.invite-friends-page .leaderboard-section {
+    background: #FDFDFD;
+    border-radius: 30px 30px 0px 0px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    /* Corrected to set the minimum height */
+    width: 100%;
+    position: fixed;
+    left: 0;
+    /* Ensures the section spans the full width of the screen */
+}
+
+
+.invite-friends-page .leaderboard-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+/* Top 3 Players Section */
+.invite-friends-page .top-3-players {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0rem;
+    width: 100%;
+    background-image: url('/mobile_images/Leaderboard/bg.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.invite-friends-page .top-3-players .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.invite-friends-page .top-3-players .player .crown {
+    width: 2.5rem;
+    position: relative;
+    top: -2rem
+}
+
+.invite-friends-page .top-3-players .player.first .player-avatar {
+    position: relative;
+    top: -1.7rem
+}
+
+.invite-friends-page .top-3-players .player .chips {
+    margin: 0.5rem 0rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.invite-friends-page .top-3-players .player-avatar {
+    width: 80px;
+}
+
+.invite-friends-page .top-3-players .first {
+    margin-top: -30px;
+}
+
+/* Other Players Section */
+.invite-friends-page .other-players {
+    width: 100%;
+    max-height: 310px;
+    /* Adjust this height according to your design */
+    overflow-y: scroll;
+    /* Enable vertical scrolling */
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar in IE and Edge */
+}
+
+.invite-friends-page .other-players::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+
+.invite-friends-page .other-players .player-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.invite-friends-page .other-players .player-row p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.invite-friends-page .other-players .player-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.invite-friends-page .other-players .chips {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}

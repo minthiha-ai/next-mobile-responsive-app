@@ -1,8 +1,11 @@
+import MobileTransferPage from '@/app/(MobileLayout)/mobile-transfer/mobile-transfer'
 import React from 'react'
 
 const Transfer = () => {
     return (
-        <div>Transfer</div>
+        <div>
+            <MobileTransferPage />
+        </div>
     )
 }
 

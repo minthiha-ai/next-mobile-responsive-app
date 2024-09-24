@@ -4,6 +4,7 @@
     background-color: #e4f0fe;
     padding-top: 3.75rem !important;
     padding-bottom: 3.75rem !important;
+    min-height: 100vh;
 }
 
 .white-space {
@@ -189,6 +190,7 @@
     margin-top: 3.75rem;
     padding: 1.5rem;
     background-color: #e4f0fe;
+    min-height: 100vh;
 }
 
 /* Input group styling */
@@ -396,6 +398,8 @@
 .bank-transfer-page {
     margin-top: 3.75rem;
     padding: 0.5rem 1rem 0rem 1rem;
+    background-color: #e4f0fe;
+    min-height: 100vh;
 }
 
 .bank-transfer-page .input-group {

@@ -1,0 +1,127 @@
+/* Bonus Page Styles */
+.bonus-page {
+    background-color: #f0f4ff;
+    padding: 1rem;
+    min-height: 100vh;
+    margin: 3.75rem 0rem;
+}
+
+/* Individual bonus item layout */
+.bonus-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bonus image styling */
+.bonus-image {
+    border-radius: 12px;
+    margin-right: 1rem;
+}
+
+/* Bonus details */
+.bonus-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bonus-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.bonus-description {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+/* Claim button styling */
+.claim-btn {
+    background-color: #346BEA;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-transform: none;
+    font-size: 0.9rem;
+    align-self: flex-end;
+}
+
+.claim-btn:hover {
+    background-color: #2b5dc9;
+}
+
+/* Promotion Details Page Styles */
+.promotion-details-page {
+    background-color: #f0f4ff;
+    min-height: 100vh;
+    margin-top: 3.75rem;
+    background: linear-gradient(342.47deg, #E4F0FE 44.85%, #8ABEF7 67.72%, #4497F1 72.73%);
+}
+
+/* Banner Section */
+.promotion-details-banner {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.promotion-details-banner img {
+    width: 100%;
+}
+
+.promotion-details-body {
+    padding: 1rem 2rem;
+}
+
+/* Condition Section */
+.promotion-details-condition,
+.promotion-details-description {
+    background-color: #fff;
+    border-radius: 13px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    border: 1px solid #760874;
+    text-align: center;
+}
+
+.promotion-details-condition-header,
+.promotion-details-description-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #B7259F 0%, #760874 100%);
+    text-align: center;
+    line-height: 3.5rem;
+    border-radius: 12px;
+}
+
+.promotion-details-condition-details,
+.promotion-details-description-details {
+    padding: 1rem;
+}
+
+.promotion-details-condition-details p,
+.promotion-details-description-details p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #8a2be2;
+}
+
+/* Claim Button */
+.promotion-details-claim-btn {
+    width: 100%;
+    margin-bottom: 1rem;
+}

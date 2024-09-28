@@ -1,0 +1,392 @@
+/* Tutorial Page Styles */
+.tutorial-wrapper {
+    background: linear-gradient(80deg, #3457e9 20%, #359fea 100%);
+    position: relative;
+    width: 100%;
+}
+
+.tutorial-page {
+    background-color: #f0f4ff;
+    min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 8.75rem;
+    padding-bottom: 7rem;
+}
+
+.tutorial-wrapper .search-bar.MuiBox-root {
+    border-radius: 0px;
+}
+
+/* Search Bar */
+.tutorial-wrapper .search-bar {
+    background: linear-gradient(80deg, #3457e9 20%, #359fea 100%);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 1rem;
+    top: 3.75rem;
+    box-shadow: none;
+}
+
+.tutorial-wrapper.MuiBox-root.mui-0 {
+    border-radius: 0px;
+}
+
+.tutorial-wrapper .search-input input {
+    background-color: #fff;
+    padding-right: 3rem;
+    padding-left: 1.2rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: none;
+    box-shadow: none;
+    /* Remove extra box shadow */
+}
+
+.tutorial-wrapper .search-input .MuiInputBase-root {
+    background-color: #fff;
+    border-radius: 50px;
+    padding-left: 0;
+    box-shadow: none;
+    height: 50px;
+    /* Adjust height to match original */
+}
+
+.tutorial-wrapper .search-input .MuiInputAdornment-root {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 1.5rem;
+}
+
+.tutorial-wrapper .search-input .MuiSvgIcon-root {
+    color: #888;
+    font-size: 1.5rem;
+}
+
+.tutorial-wrapper .MuiOutlinedInput-notchedOutline {
+    border: none;
+    /* Remove the outline to match original */
+}
+
+/* Popular Tutorial Section */
+.tutorial-page .popular-tutorial-section {
+    margin-bottom: 1.5rem;
+}
+
+.tutorial-page .popular-tutorial-section h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.tutorial-page .popular-tutorials-slider {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.5rem;
+    gap: 0.5rem;
+}
+
+.tutorial-page .tutorial-card {
+    background-color: #fff;
+    border-radius: 12px;
+    min-width: 286px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.tutorial-page .tutorial-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0px 0px;
+    margin-bottom: 0.5rem;
+}
+
+.tutorial-page .tutorial-duration {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+}
+
+.tutorial-page .tutorial-card .title {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.tutorial-page .watch-btn {
+    background: #179DFF;
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 7px;
+    text-transform: none;
+    font-size: 0.9rem;
+}
+
+.tutorial-page .slider-dots {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.tutorial-page .slider-dots .dot {
+    height: 8px;
+    width: 8px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.tutorial-page .slider-dots .dot.active {
+    background-color: #346BEA;
+}
+
+/* Category Section */
+.tutorial-page .category-section {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.tutorial-page .category-section span {
+    padding: 1rem 0rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tutorial-page .category-section .category-btns {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 1.5rem;
+}
+
+.tutorial-page .category-btn {
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 12px;
+    text-transform: none;
+    padding: 0.3rem 1.5rem;
+    font-size: 0.85rem;
+    border: 1px solid #BDBDBD;
+    width: 84px;
+}
+
+.tutorial-page .category-btn.active {
+    background-color: #346BEA;
+    color: #fff;
+}
+
+/* Tutorials List Section */
+.tutorial-page .tutorial-list-section {
+    margin-bottom: 1.5rem;
+}
+
+.tutorial-page .tutorial-list-section h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.tutorial-page .tutorial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.tutorial-page .tutorial-item {
+    background: #53B6FF;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0px 10px 35px 0px #4A80F033;
+    transition: background-color 0.3s ease;
+}
+
+.tutorial-page .tutorial-item span {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.tutorial-page .tutorial-icon img {
+    width: 44px;
+}
+
+
+.tutorial-page .tutorial-arrow {
+    color: #346BEA;
+    font-size: 1.25rem;
+}
+
+/* Support Section */
+.tutorial-page .support-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tutorial-page .support-section .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.tutorial-page .support-section .text span:nth-child(1) {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3457e9;
+}
+
+.tutorial-page .support-section .text span:nth-child(2) {
+    font-size: 0.8rem;
+    color: #3457e9;
+}
+
+.tutorial-page .support-section img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* Tutorial Detail Page Styles */
+.tutorial-detail-wrapper {
+    background: linear-gradient(80deg, #3457e9 20%, #359fea 100%);
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+}
+
+.tutorial-details {
+    background-color: #f0f4ff;
+    height: 100vh;
+    padding: 1.5rem 1rem;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+/* Video Section */
+.tutorial-detail-wrapper .video-section {
+    position: relative;
+    background-color: #e6f0ff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tutorial-detail-wrapper .video-thumbnail {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.tutorial-detail-wrapper .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: white;
+    padding: 1rem;
+}
+
+.tutorial-detail-wrapper .video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+}
+
+/* Steps Section */
+.tutorial-detail-wrapper .steps-section {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tutorial-detail-wrapper .step-title {
+    padding-bottom: 1rem;
+}
+
+.tutorial-detail-wrapper .step-container {
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tutorial-detail-wrapper .step-number {
+    font-size: 1.25rem;
+    color: #346BEA;
+    margin-bottom: 0.5rem;
+}
+
+.tutorial-detail-wrapper .step-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.tutorial-detail-wrapper .step-image {
+    width: 97px;
+    border-radius: 12px;
+}
+
+/* Status Section */
+.tutorial-detail-wrapper .status-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tutorial-detail-wrapper .status-btn {
+    background-color: #346BEA;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+.tutorial-detail-wrapper .status-note {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+    line-height: 1.5rem;
+}

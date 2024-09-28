@@ -1,0 +1,47 @@
+/* Promotion Page Styles */
+.promotion-page {
+    background: #5382F8;
+    min-height: 100vh;
+    padding-top: 3.75rem;
+}
+
+/* Flexbox layout for promotions */
+.promotion-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    width: 100%;
+    height: 70vh;
+    padding: 1rem;
+}
+
+/* Left side promotion items */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+/* Right side promotion items */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+/* Individual promo item */
+/* .promo-item {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+/* Hover effect */
+/* .promo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+} */

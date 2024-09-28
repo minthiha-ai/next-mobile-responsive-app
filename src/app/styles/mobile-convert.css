@@ -1,0 +1,106 @@
+/* Convert Page Styles */
+.convert-wrapper {
+    background-color: #f0f4ff;
+    height: 100vh;
+    padding: 1rem;
+    padding-top: 7rem;
+}
+
+.conversion-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conversion-header {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #888;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conversion-input {
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: 500;
+    text-align: left;
+    color: #333;
+}
+
+.currency-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.currency-flag img {
+    width: 30px;
+    height: 30px;
+}
+
+.balance-info {
+    color: #888;
+    font-size: 0.9rem;
+    text-align: right;
+    font-weight: 500;
+}
+
+.convert-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.convert-btn {
+    background-color: #888;
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.convert-btn:hover {
+    background-color: #666;
+}
+
+.conversion-info {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.conversion-info p {
+    margin: 0.5rem 0;
+}
+
+.fee-amount {
+    color: #ff3300;
+    font-weight: bold;
+}
+
+.rate-percentage {
+    color: #ff3300;
+    font-weight: bold;
+}

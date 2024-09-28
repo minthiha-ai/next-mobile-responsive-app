@@ -1,0 +1,68 @@
+/* Daily Check-In Page Styles */
+.checkin-page {
+    background-color: #f0f4ff;
+    min-height: 100vh;
+}
+
+.checkin-wraper {
+    min-height: 100vh;
+    padding: 1rem;
+    position: relative;
+    top: -7rem;
+}
+
+.checkin-bg {
+    width: 100%;
+    height: 20vh;
+    background: #5382F8;
+}
+
+/* Reward Progress Section */
+.checkin-progress {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.checkin-progress button {
+    margin-top: 1rem;
+}
+
+.checkin-claim-btn:hover {
+    background-color: #2a56c8;
+}
+
+/* Days Grid Section */
+.checkin-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.checkin-day {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0rem 0.8rem;
+    text-align: center;
+    border: 2px dashed #346bea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 0;
+}
+
+.checkin-day-label {
+    font-size: 0.75rem;
+}
+
+.checkin-day-reward {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #666;
+    text-align: end;
+}

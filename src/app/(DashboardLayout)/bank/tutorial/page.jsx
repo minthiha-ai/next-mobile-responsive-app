@@ -1,9 +1,13 @@
+
+import MobileTutoPage from '@/app/(MobileLayout)/mobile-tutorial/mobile-tuto'
 import React from 'react'
 
-const Tutorial = () => {
+const TutorialPage = () => {
     return (
-        <div>Tutorial</div>
+        <div>
+            <MobileTutoPage />
+        </div>
     )
 }
 
-export default Tutorial
+export default TutorialPage

@@ -1,8 +1,11 @@
+import MobileTransactionPage from '@/app/(MobileLayout)/mobile-transaction/mobile-transaction'
 import React from 'react'
 
 const Transaction = () => {
     return (
-        <div>Transaction</div>
+        <div>
+            <MobileTransactionPage />
+        </div>
     )
 }
 

@@ -6,6 +6,7 @@ import { Slide, Dialog } from '@mui/material';
 import paths from '@/paths';
 import PaymentMethod from '@/app/components/mobile/deposit/PaymentMethod';
 import BankList from '@/app/components/mobile/deposit/BankList';
+import WalletCard from '@/app/components/mobile/WalletCard';
 
 const MobileDeposit = () => {
     const [openPopup, setOpenPopup] = useState(false);
@@ -33,36 +34,7 @@ const MobileDeposit = () => {
         <>
             <PageHeader backUrl={paths.home()} title="Top Up" />
             <div className="deposit-page">
-                <div className="wallet-card">
-                    <div className="wallet-header">
-                        <span>Wallet</span>
-                        <img src="/mobile_images/icons/eye.png" alt="" />
-                    </div>
-
-                    <div className="wallet-balance">
-                        199,900
-                    </div>
-
-                    <div className="wallet-currency">
-                        <select>
-                            <option value="RM">RM</option>
-                            <option value="RM">USDT</option>
-                            <option value="RM">YUAN</option>
-                        </select>
-                    </div>
-
-                    <div className="wallet-details">
-                        <div className="wallet-detail-item">
-                            <span>Cash</span>
-                            <strong>RM 100,000</strong>
-                        </div>
-                        <div className="divider"></div>
-                        <div className="wallet-detail-item">
-                            <span>Chips</span>
-                            <strong>99,900</strong>
-                        </div>
-                    </div>
-                </div>
+                <WalletCard />
 
                 <section className="deposit-method">
                     <h2>Select deposit method</h2>

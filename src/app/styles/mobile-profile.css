@@ -1,0 +1,416 @@
+/* Account Page Styles */
+.account-wrapper {
+    background-color: #f0f4ff;
+    min-height: 100vh;
+    padding-top: 3.75rem;
+}
+
+/* Account Header */
+.account-wrapper .account-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(80deg, #3457e9 20%, #359fea 100%);
+    border-radius: 0 0 40px 40px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.account-wrapper .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.account-wrapper .profile-name {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.account-wrapper .badges {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.account-wrapper .badge {
+    background: linear-gradient(180deg, #236DB7 0%, #0039E5 100%);
+    box-shadow: 0px var(--sds-size-depth-025) 4px 0px #00000040 inset;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.account-wrapper .qr-code {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+}
+
+/* Account Overview */
+.account-wrapper .account-overview {
+    padding: 0rem 1rem;
+    position: relative;
+    top: -2rem
+}
+
+/* Overview Section */
+.account-wrapper .overview-section {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.account-wrapper .overview-title {
+    margin-bottom: 1rem;
+}
+
+.account-wrapper .overview-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.account-wrapper .overview-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-wrapper .overview-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.account-wrapper .overview-label {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 1rem;
+}
+
+/* Action Buttons */
+.account-wrapper .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.account-wrapper .action-btn {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem 0rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-size: 0.7rem;
+    word-wrap: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-wrapper .action-btn img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Links */
+.account-wrapper .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.account-wrapper .footer-link {
+    color: #346BEA;
+    font-size: 0.9rem;
+    text-transform: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Scoped CSS for the Personal Info Page */
+.personal-info-page {
+    background-color: #f0f4ff;
+    min-height: 100vh;
+    padding-top: 3.75rem;
+}
+
+/* Personal Header */
+.personal-bg {
+    background: linear-gradient(80deg, #3457e9 20%, #359fea 100%);
+    border-radius: 0 0 40px 40px;
+    height: 121px;
+}
+
+.personal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    top: -3rem;
+}
+
+.personal-info-page .profile-image {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.personal-info-page .profile-name {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.personal-info-page .profile-phone {
+    color: #000;
+    font-size: 1rem;
+}
+
+/* Profile Actions */
+.personal-info-page .profile-actions {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.personal-info-page .action-btn {
+    border-radius: 0;
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    color: #346BEA;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    justify-content: flex-start;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.personal-info-page .action-btn:hover {
+    background-color: #f0f4ff;
+    /* Add a subtle hover effect */
+}
+
+.personal-info-page .profile-actions .action-btn+.action-btn {
+    border-top: 1px solid #f1f1f1;
+    /* Divider between buttons */
+}
+
+
+/* Personal Details Section */
+.personal-info-page .details-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+/* Each detail item */
+.personal-info-page .detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.personal-info-page .detail-item:last-child {
+    border-bottom: none;
+    /* Remove bottom border for the last item */
+}
+
+.personal-info-page .detail-label {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Styling the value text */
+.personal-info-page .detail-value {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* For consistency in the displayed information */
+.personal-info-page .detail-info {
+    font-size: 1rem;
+    color: #346BEA;
+    /* Color matches the screenshot */
+    font-weight: bold;
+    text-align: right;
+    margin-right: 0.5rem;
+}
+
+
+/* Change Password Page */
+.change-password-page {
+    background-color: #f0f4ff;
+    min-height: 100vh;
+    padding: 1rem;
+    padding-top: 7rem;
+}
+
+/* Sections for password and PIN */
+.change-password-page .password-section,
+.change-password-page .pin-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+/* Input group styling */
+.change-password-page .input-group {
+    margin-bottom: 1rem;
+}
+
+.change-password-page .input-field {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #f1f5ff;
+    padding-right: 0.5rem;
+}
+
+/* OTP and Submit Button Styling */
+.change-password-page .otp-btn {
+    background-color: #ff6b00;
+    color: white;
+    border-radius: 12px;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.change-password-page .submit-btn {
+    background-color: #346BEA;
+    color: white;
+    border-radius: 12px;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: none;
+}
+
+/* Divider */
+.change-password-page .divider {
+    border-top: 2px dashed #e0e0e0;
+    margin: 2rem 0;
+}
+
+/* IconButton for toggling password visibility */
+.change-password-page .MuiIconButton-root {
+    color: #888;
+}
+
+/* Game Record Page */
+.game-record-page {
+    background-color: #f0f4ff;
+    min-height: 100vh;
+    padding: 1rem;
+    padding-top: 7rem;
+}
+
+/* Search Section */
+.search-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+/* Record and Type Dropdown */
+.search-section .record-select,
+.search-section .type-select {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+}
+
+.search-section .date-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.search-section .date-input {
+    width: 48%;
+    border-radius: 12px;
+    background-color: #f1f5ff;
+}
+
+.search-section .date-separator {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #888;
+}
+
+.search-section .search-btn {
+    background-color: #346BEA;
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: none;
+}
+
+/* History Section */
+.history-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-section h4 {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.history-section .no-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+}
+
+.history-section .no-history-icon {
+    margin-bottom: 1rem;
+}

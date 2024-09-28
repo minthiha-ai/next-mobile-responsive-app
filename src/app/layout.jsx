@@ -10,6 +10,15 @@ import "./styles/mobile-loan.css";
 import "./styles/mobile-contact.css";
 import "./styles/mobile-angpao.css";
 import "./styles/mobile-invite.css";
+import "./styles/mobile-transaction.css";
+import "./styles/mobile-tutorial.css";
+import "./styles/mobile-wallet.css";
+import "./styles/mobile-convert.css";
+import "./styles/mobile-profile.css";
+import "./styles/mobile-promotion.css";
+import "./styles/mobile-bonus.css";
+import "./styles/mobile-check-in.css";
+import "./styles/mobile-vip.css";
 
 export const metadata = {
     title: 'Modernize Main Demo',

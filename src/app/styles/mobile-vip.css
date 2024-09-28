@@ -1,0 +1,134 @@
+/* VIP Page Styles */
+.vip-page {
+    background-color: #f0f4ff;
+    min-height: 100vh;
+    margin: 3.75rem 0rem;
+    padding: 1rem;
+}
+
+/* VIP Info Section */
+.vip-info {
+    background: linear-gradient(180deg, #115E9A 0%, #102581 100%);
+    border-radius: 8px;
+    width: 100%;
+    min-height: 137px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vip-body {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.vip-badge {
+    margin-bottom: 1rem;
+}
+
+.vip-details {
+    text-align: left;
+    width: 100%;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.vip-level {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: right;
+}
+
+.vip-progress {
+    font-size: 1.25rem;
+    color: #fff;
+    margin: 0.5rem 0;
+}
+
+.vip-progress-bar {
+    background-color: #fff;
+    height: 6px;
+    border-radius: 3px;
+    width: 100%;
+    position: relative;
+}
+
+.vip-progress-fill {
+    background-color: #f0932b;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.vip-progress-text {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+/* VIP Sidebar */
+.vip-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25%;
+    background-color: #e9f2ff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vip-level-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.vip-level-item.active {
+    background-color: #2d77ea;
+    color: #fff;
+}
+
+.vip-level-item img {
+    margin-left: 0.5rem;
+}
+
+/* VIP Perks Section */
+.vip-perks {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.vip-perks-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2d77ea;
+    margin-bottom: 1rem;
+}
+
+.perks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.perks-list li {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.perks-list li span {
+    font-size: 1rem;
+}

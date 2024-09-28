@@ -295,3 +295,188 @@
     position: relative;
     top: -1.2rem;
 }
+
+/* General Wallet Card Styles */
+.wallet-card {
+    background: linear-gradient(80deg, rgba(52, 87, 233, 1) 20%, rgba(53, 159, 234, 1) 83%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    margin: 1rem auto;
+    box-shadow: 0px 5px 28px 0px #00000061;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.wallet-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.wallet-header span {
+    font-size: 1rem;
+}
+
+.wallet-header img {
+    width: 1.5rem;
+}
+
+.wallet-balance {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    text-align: start;
+}
+
+.wallet-currency {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.wallet-currency select {
+    background: transparent;
+    border: 1px solid #fff;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Wallet Details */
+.wallet-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallet-detail-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.wallet-detail-item span {
+    font-size: 0.9rem;
+    color: #d1e0ff;
+}
+
+.wallet-detail-item strong {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.divider {
+    height: 30px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile Sidebar styles */
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 80%;
+    max-width: 320px;
+    height: 100%;
+    background-color: #f0f4ff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    z-index: 9999;
+}
+
+.mobile-sidebar.open {
+    transform: translateX(0);
+}
+
+.mobile-sidebar .profile-section {
+    background-image: url('/mobile_images/background/sidebar-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.mobile-sidebar .profile-image {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #346BEA;
+}
+
+.mobile-sidebar .profile-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.mobile-sidebar .menu-items {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mobile-sidebar .menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #346bea;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-sidebar .menu-item.active {
+    background: #346BEA;
+    color: #fff;
+}
+
+.mobile-sidebar .menu-item:hover {
+    background-color: #f1f6ff;
+    padding-left: 1.2rem;
+    transition: padding 0.3s ease;
+}
+
+.mobile-sidebar .menu-item svg {
+    margin-right: 0.75rem;
+}
+
+.mobile-sidebar .logout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e74c3c;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.mobile-sidebar .logout-btn svg {
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .mobile-sidebar {
+        width: 50%;
+        /* Wider sidebar on larger screens */
+        max-width: 400px;
+    }
+}

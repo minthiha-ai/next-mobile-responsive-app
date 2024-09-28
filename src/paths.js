@@ -50,12 +50,61 @@ const paths = {
     promotion() {
         return '/bank/promotion';
     },
+    bonus() {
+        return '/bank/promotion/bonus'
+    },
+    bonusDetail() {
+        return '/bank/promotion/bonus/detail'
+    },
+    vip() {
+        return '/bank/promotion/vip'
+    },
+    luckyDraw() {
+        return '/bank/promotion/lucky-draw'
+    },
+    checkIn() {
+        return '/bank/promotion/check-in'
+    },
+    level() {
+        return '/bank/promotion/level'
+    },
+    collection() {
+        return '/bank/promotion/collection'
+    },
     tutorial() {
         return '/bank/tutorial';
+    },
+    tutorialDetail() {
+        return '/bank/tutorial/detail';
     },
     invite() {
         return '/invite';
     },
+    transaction() {
+        return '/transaction';
+    },
+    liveChat() {
+        return '/live-chat';
+    },
+    wallet() {
+        return '/wallet';
+    },
+    convert() {
+        return '/wallet/convert';
+    },
+    profile() {
+        return '/profile';
+    },
+    profileDetails() {
+        return '/profile/details';
+    },
+    profilePassword() {
+        return '/profile/password';
+    },
+    profileRecords() {
+        return '/profile/records';
+    },
+
 };
 
 export default paths;

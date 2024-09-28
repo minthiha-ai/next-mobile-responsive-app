@@ -1,0 +1,62 @@
+/* Wallet Page Styles */
+.wallet-wrapper {
+    background-color: #f0f4ff;
+    height: 100vh;
+    margin-top: 3.75rem;
+}
+
+.wallet-page {
+    padding: 1rem;
+}
+
+.wallet-page .wallet-card {
+    width: 100%;
+    margin: 0px;
+    min-height: 200px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Styling for each action button */
+.action-btn {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 0.75rem;
+    width: 48%;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #346bea;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #f1f6ff;
+}
+
+/* Action icon inside the button */
+.action-icon {
+    width: 32px;
+    /* Larger icon size to match the design */
+    height: 32px;
+    margin-bottom: 0.5rem;
+}
+
+/* Ensure the card and buttons look centered */
+.action-buttons {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

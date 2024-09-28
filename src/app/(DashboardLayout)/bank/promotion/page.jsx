@@ -1,8 +1,11 @@
+import MobilePromotionPage from '@/app/(MobileLayout)/mobile-promotion/mobile-promotion'
 import React from 'react'
 
 const Promotion = () => {
     return (
-        <div>Promotion</div>
+        <div>
+            <MobilePromotionPage />
+        </div>
     )
 }
 

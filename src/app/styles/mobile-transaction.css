@@ -1,0 +1,180 @@
+/* Transaction Page Styles */
+.transaction-page {
+    background-color: #f0f4ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin-top: 3.75rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Filter Section */
+.transaction-page .filter-section {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 10;
+    /* Keep filter buttons on top */
+}
+
+.transaction-page .filter-btn {
+    background-color: #f5f6fb;
+    border-radius: 30px;
+    padding: 0.2rem 1rem;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border: none;
+    text-transform: none;
+    z-index: 15;
+    width: 8rem;
+    /* Higher than the main layer */
+}
+
+.transaction-page .filter-btn.selected {
+    background-color: #346BEA;
+    color: #fff;
+}
+
+/* Overlay for Category and Date Options */
+.overlay {
+    position: absolute;
+    top: 5rem;
+    /* Position just below the filter section */
+    left: 0;
+    width: 100%;
+    background: #52525280;
+    /* Translucent background */
+    display: none;
+    z-index: 20;
+    /* Overlay on top of all */
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    /* Allow height to grow based on content */
+}
+
+.overlay.active {
+    display: flex;
+}
+
+/* Category and Date Options */
+.transaction-page .category-options,
+.transaction-page .date-options {
+    background-color: #f0f4ff;
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.transaction-page .category-btn,
+.transaction-page .date-btn {
+    background-color: #f5f6fb;
+    color: #333;
+    border-radius: 8px;
+    text-transform: none;
+    padding: 0.5rem 1rem;
+    width: 30%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-page .category-btn:active,
+.transaction-page .date-btn:active {
+    background-color: #346BEA;
+    color: white;
+}
+
+.transaction-page .category-btn.selected {
+    background-color: #346BEA;
+    color: white;
+}
+
+/* Date Range Options */
+.transaction-page .date-range {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.transaction-page .date-input {
+    width: 42%;
+    padding: 0.5rem;
+    border: 1px solid #d1d9e6;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.transaction-page .date-separator {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.transaction-page .search-btn {
+    background-color: #346BEA;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-transform: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+/* No Transaction Section */
+.transaction-page .no-transaction-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.transaction-page .no-transaction-img {
+    width: 178px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.transaction-page .no-transaction-text {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+
+.transaction-page .deposit-btn {
+    background-color: #346BEA;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.transaction-page .deposit-btn:hover {
+    background-color: #2d5fc7;
+}

@@ -7,7 +7,7 @@ const MobileLayout = ({ children }) => {
     const pathname = usePathname();
 
     // Specify the paths where the BottomMenu should not be rendered
-    const excludeBottomMenuPaths = ['/bank/transfer/detail/recipt', '/bank/transfer/angpao/send', '/bank/transfer/angpao/recieve'];
+    const excludeBottomMenuPaths = ['/bank/transfer/detail/recipt', '/bank/transfer/angpao/send', '/bank/transfer/angpao/recieve', '/auth/login', '/auth/signup'];
 
     const shouldRenderBottomMenu = !excludeBottomMenuPaths.includes(pathname);
 

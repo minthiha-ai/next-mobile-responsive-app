@@ -19,6 +19,10 @@ import "./styles/mobile-promotion.css";
 import "./styles/mobile-bonus.css";
 import "./styles/mobile-check-in.css";
 import "./styles/mobile-vip.css";
+import "./styles/mobile-level.css";
+import "./styles/mobile-lucky-draw.css";
+import "./styles/mobile-collection.css";
+import "./styles/mobile-auth.css";
 
 export const metadata = {
     title: 'Modernize Main Demo',

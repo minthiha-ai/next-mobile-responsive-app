@@ -1,0 +1,241 @@
+/* Login Page Styles */
+.login-page {
+    background-color: #f0f4ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Section */
+.login-page .login-header {
+    background-image: url('/mobile_images/background/login.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    height: 30vh;
+}
+
+
+/* Form Section */
+.login-page .login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.login-page .login-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.login-page .input-group {
+    margin-bottom: 1rem;
+}
+
+.login-page .input-group label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.login-page .input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+.login-page .input-group input::placeholder {
+    color: #aaa;
+}
+
+/* Form Actions */
+.login-page .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.login-page .remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.login-page .remember-me input {
+    margin-right: 0.5rem;
+}
+
+.login-page .forgot-password {
+    color: #2d77ea;
+    font-size: 0.9rem;
+}
+
+/* Login Button */
+.login-page .login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #2d77ea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.login-page .signup-section {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.login-page .signup-section .signup-link {
+    color: #2d77ea;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Divider */
+.login-page .or-login-with {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* Social Login Buttons */
+.login-page .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.login-page .social-btn {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.login-page .social-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Reusing the existing login-page styles */
+.signup-page {
+    background-color: #f0f4ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-page .login-header {
+    background-image: url('/mobile_images/background/login.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    height: 30vh;
+}
+
+/* Form Section */
+.signup-page .signup-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.signup-page .login-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.signup-page .input-group {
+    margin-bottom: 1rem;
+}
+
+.signup-page .input-group label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.signup-page .input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+.signup-page .input-group input::placeholder {
+    color: #aaa;
+}
+
+/* Phone Input Style */
+.signup-page .phone-input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.signup-page .phone-input .phone-country-code {
+    width: 30%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+.signup-page .phone-input input {
+    flex-grow: 1;
+    padding-left: 0.5rem;
+}
+
+.signup-page .login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #2d77ea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.signup-page .signup-section {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.signup-page .signup-section .signup-link {
+    color: #2d77ea;
+    font-weight: bold;
+    text-decoration: none;
+}

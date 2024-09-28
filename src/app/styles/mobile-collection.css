@@ -1,0 +1,177 @@
+/* Collection Page Styles */
+.collection-page {
+    background-color: #f0f4ff;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3.75rem;
+}
+
+/* Banner */
+.collection-banner {
+    position: relative;
+    text-align: center;
+}
+
+.collection-banner img {
+    border-radius: 12px;
+    background: linear-gradient(84.65deg, #468BF3 0.38%, #347DEA 98.18%);
+}
+
+.refresh-icon {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Filter */
+.card-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    border: none;
+    background: #2E93DA;
+    color: white;
+    border-radius: 5px 0px 0px 5px;
+    width: 80%;
+    text-align: end;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.dropdown select {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0px 5px 5px 0px;
+    background: #2272A3;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Cards Grid */
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.cards-grid img {
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.cards-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Quest Section Styles */
+.quest-section {
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 1rem;
+}
+
+.quest-section h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Individual Quest Item */
+.quest-item {
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.quest-header {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.75rem;
+    border-radius: 12px 12px 0px 0px;
+    padding: 0.5rem;
+    background: #2E93DA;
+}
+
+/* Quest Body containing Progress and Rewards */
+.quest-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Progress Section */
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.progress-text {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    height: 8px;
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+}
+
+.progress-fill {
+    background-color: lightgreen;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Reward Section */
+.reward-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.reward-section img {
+    width: 32px;
+    height: 32px;
+}
+
+.coin-value {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.claim-btn {
+    padding: 0.5rem 1rem;
+    background-color: #2d77ea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.claim-btn:hover {
+    background-color: #346bea;
+}

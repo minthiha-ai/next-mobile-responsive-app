@@ -104,6 +104,12 @@ const paths = {
     profileRecords() {
         return '/profile/records';
     },
+    login() {
+        return '/auth/login'
+    },
+    signup() {
+        return '/auth/signup'
+    }
 
 };
 

@@ -12,7 +12,7 @@ const MobileBonusPage = () => {
 
     return (
         <>
-            <PageHeader backUrl={paths.home()} title="Bonus" headerClass="header" arrowColor="black" />
+            <PageHeader backUrl={paths.promotion()} title="Bonus" headerClass="header" arrowColor="black" />
             <div className="bonus-page">
                 {bonusItems.map((_, index) => (
                     <div className="bonus-item" key={index}>

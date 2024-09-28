@@ -8,7 +8,7 @@ import InsetShadowButton from '@/app/components/customs/buttons/InsetShadowButto
 const MobileBonusDetailsPage = () => {
     return (
         <>
-            <PageHeader backUrl={paths.promotion()} title="New User Claim It Free" headerClass="header" arrowColor="black" />
+            <PageHeader backUrl={paths.bonus()} title="New User Claim It Free" headerClass="header" arrowColor="black" />
             <div className="promotion-details-page">
                 {/* Banner Section */}
                 <div className="promotion-details-banner">
